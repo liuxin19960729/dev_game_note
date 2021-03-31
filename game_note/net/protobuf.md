@@ -210,7 +210,7 @@ Varints 编码却存在着明显缺陷
 ZigZag 编码：有符号整数映射到无符号整数，然后再使用 Varints 编码
 
 例:
-int32 val=-2
+sint32 val=-2
 映射到无符号数3
 对3进行varints编码 
 
@@ -224,8 +224,253 @@ int32 val=-2
 
 ```
 wire_type:在上面中 tag 后三位表示, 实际 protobuf存在6中类型
-(start group 和 end group 被废弃实际只有4种)
+(start group 和 end group 被废弃,实际只有4种(Varint 64-bit length-delimited 32-bit))
+
+注意:
+    varint 里面使用不止一种编码的策略  int32 int64 Varints编码
+    sint32 sint64 使用的是ZigZag的编码类型
+
+    bool本质是0和1 
+    enum 本质是常数
+
+    varints 不需要 lenght 这种编码
+    所以使用 varints类型编码的value不需要length
+
+    filed=tag+value(tag,value都是varints编码)
+
+
+
+
+例
+    message Example {
+        int32 int32Value=1;
+    }
+
+    tag 编码 0#0001 000  (1代表的是第一个字段) 
+    value 编码 0#000 0001 
+
+    =0x08 0x01
+
+
+
+当 int32Value=666的时候
+
+tag 编码 0#0001 000  (1代表的是第一个字段) 
+value 编码  1# 001 1010 0# 000 0101 
+=0x08 0x9a05
+
+
+
+当int32 value值为-1的时候
+
+tag 编码 0#000 1 000
+
+value 原码 1000 .........00001
+      补码 1111 ........1111
+
+      编码 1#111 1111 .....0#000 0001
+        =0x08 0xff ...........0x01
+
+
+
+boo,enum例子
+ 
+    message Example1 {
+    bool boolVal = true;
+    }
+
+
+
+    tag 编码 0#000 1000 
+    value 编码 0#000 0001
+    =0x08 0x01
+   
+   当 boolValue =false
+    编码结果为空
+    ？？？
+
+    protubuf为了提高效率做了一个小技巧，规定默认值的机制(当读出来的值为空的时候就使用这个字段的默认值) bool的默认值的false
+    这样可以让数据包的大小进一步变小
+  
+
+
+
+
+
+  enum 的例子
+  message Example1 {
+    enum COLOR {
+        YELLOW = 0;
+        RED = 1;
+        BLACK = 2;
+        WHITE = 3;
+        BLUE = 4;
+    }
+    COLOR colorVal = 1;
+    }
+
+    规定
+        枚举的常量必须是32位整数值的范围
+        不推荐在在枚举中使用的负数因为(varints编码对负数的编码不够高效)
+
+    当 colorValue=Color.BLUE;
+
+    tag  编码0#0001 000
+    value 0#000 0100 
+    =0x08 0x04
+
+
+
+
+
+sint32 和 sin64编码
+
+message Example1 {
+    sint32 sint32Val = 1;
+}
+
+sint32Val=-1
+
+tag 0#000 1000 
+
+value 0#000 0001 
+=08 01
+
+
+
+Example1 example1;
+example1.set_colorval(-2);
+
+// 编码结果，3 映射回 -2
+编码结果：tag-(Varints)00001 000 + value-(Varints)0#000 0011 = 08 03
+
+
+*****注意：
+    左移补位为0
+    右移补位为(正数补0  负数补1)
+zigzag编码
+    n=-1 11111111 11111111 11111111 11111111 
+    n<<1 =11111111 11111111 1111111 11111110
+    n>>32 = 1111111 11111111 11111111 11111111
+
+    n<<1 ^ n>>31
+    0000 ........1
+
+
+
+
+    n=-2 1111 1111 .........1110
+    n<<1 1111 1111 ........1100
+    n>>31 1111 1111 1111 ......1111
+
+    n<<1 ^ n>>31  =11=3
+
+    
+
+    n=1 0000 ............1
+    n<<1 0000..........10;
+    n>>31 1111..........10
+    n << 31 ^ n<<1 =0000 ....00
+
+
+
+sint32和sint64之间同理
+
+
+
+
 ```
+
+
+
+### 64-bit 和 32-bit类型
+```
+结构和Varint一样都是Tag-Value类型
+
+
+为什么要存在64和32 bit 呢??
+    因为在一定的范围里面VarInt效率高但是超过了一定的范围效率就非常的低下，此时使用64-bit和32-bit更加的合适
+    
+        当数呀大于2^56次方 64-bit这个类型比 unit64更加高效....
+
+
+
+
+
+例：
+
+message Example1 {
+    fixed64 fixed64Val = 1;
+    sfixed64 sfixed64Val = 2;
+    double doubleVal = 3;
+}
+
+
+在程序中分别设置字段值 1、-1、1.2，其编码结果为：
+
+
+fixed64Val  (8 byte)
+    tag  0000 1001B =0X09
+    value  0x01 0x00 0x00 0x00 0x00 0x00 0x00 0x00
+
+sfixed64Val 
+    tag 0001 0 001 B =0X11
+
+    value  0xff 0xff 0xff 0xff 0xff 0xff 0xff 0xff
+
+
+
+doubleVal 
+    tag 00011 001 0x19
+    value 0x33 33 33 33 33  33 f3 3f 
+
+
+
+
+bit-32 fixed 和 sfixed float 和bit-64同理
+```
+
+
+### Length-delimited 类型
+```
+filed=tag+length+value
+
+
+syntax = "proto3";
+
+// message 定义
+message Example1 {
+    string stringVal = 1;
+    bytes bytesVal = 2;
+    message EmbeddedMessage {
+        int32 int32Val = 1;
+        string stringVal = 2;
+    }
+    EmbeddedMessage embeddedExample1 = 3;
+    repeated int32 repeatedInt32Val = 4;
+    repeated string repeatedStringVal = 5;
+}
+
+
+
+```
+
+
+### packed编码
+
+```
+proto2提供了 packed=true 的可选设置，proto3默认已经设置
+packed 目前只能用于 primitive 类型(原始类型)
+
+
+
+
+packed = true 主要使让 ProtoBuf 为我们把 repeated primitive 的编码结果打包，从而进一步压缩空间，进一步提高效率、速度。这里打包的含义其实就是：原先的 repeated 字段的编码结构为 Tag-Length-Value-Tag-Length-Value-Tag-Length-Value...，因为这些 Tag 都是相同的（同一字段），因此可以将这些字段的 Value 打包，即将编码结构变为 Tag-Length-Value-Value-Value...
+
+
+
+```
+
 
 
 
