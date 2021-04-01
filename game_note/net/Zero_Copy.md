@@ -308,4 +308,86 @@ linux和unix 设计哲学之一：对不同的操作赋予不同的执行等级(
 图中黑线是用户态和内核态的分界线
 
 
+
+read(2)/write(2) 
+
+
+    kernel buffer cache (缓冲区缓存)  io缓存细分为 page cache 和 buffer cache 
+
+
+disk 磁盘
+
+
+
+
+读磁盘: 内核会先检查 page cache 里是不是已经缓存了这个数据,存在，读取返回，否则，则穿透到磁盘里去读取，然后在保存到Page Cache里面，以备下次缓存命中
+
+
+
+写磁盘: 内核直接把数据写入 Page Cache,并把对应的页标记为 dirty，添加到 dirty list 里，然后就直接返回，内核会定期把 dirty list 的页缓存 flush 到磁盘，保证页缓存和磁盘的最终一致性。
+
+
+
+
+
+
+
+IO缓存区:
+可以看出，所谓 I/O 缓冲区缓存就是在内核和磁盘、网卡等外设之间的一层缓冲区，用来提升读写性能的,当我们要记载新的缓存的时候这个时候旧的缓存会通过页面置换算法(如LRU)定期去淘汰旧的页面
+
+
+
+
+在Linux还不支持虚拟内存技术之前
+Buffer Cache 是基于磁盘最小单位 (块) 来进行的,所有的缓存都是用Buffer Cache来加速的,所有的磁盘块操作都是通过 Buffer Cache 来加速
+
+linux支持虚拟内存机制之后 page 是内存管理的最小单位。引入page cache 来缓存linux文件的内容;主要用来作为文件系统上的文件数据的的缓存，提升读写性能。常见的是针对文件的 read()/write() 操作，另外也包括了通过 mmap() 映射之后的块设备
+
+
+
+    也就是说Page Cache 负责了大部分的块设置的文件缓存工作。而buffer cache 用来在对块设备读写的时候，对块进行数据缓存来使用
+```
+
+![Pagecache&BufferCache](./imgs/page_buffer_1.jpg)
+
+```
+上图(linux2.4版本之前)
+    Buffer Cache 对粒度更细的设备块的缓存,而 Page Cache 是基于虚拟内存的页单元缓存，因此还是基于Buffer Cache,
+
+    会造成问题
+    1.在内存里缓存两份相同的数据，这就会导致同一份文件保存了两份，冗余且低效。
+    2.当我调用write()之后，buffer cache 才是有效数据可能会造成buffer cache 和 page cache里面的数据不一致
+      解决：有基于磁盘文件系统的 write，都需要调用 update_vm_cache() 函数，该操作会把调用 write 之后的 Buffer Cache 更新到 Page Cache 去
+
+```
+
+
+### linux 2.4 版本以后
+
+![linux 2.4 版本以后Buffer](./imgs/page_buffer_2.jpg)
+```
+融合之后就可以统一操作 Page Cache 和 Buffer Cache：处理文件 I/O 缓存交给 Page Cache，而当底层 RAW device 刷新数据时以 Buffer Cache 的块单位来实际处理。
+```
+
+
+
+
+## IO模式
+
+```
+linux或者 uninx-like 系统里面，IO模式一般有三种
+
+1.程序控制 I/O
+2.中断驱动 I/O
+3.DMA I/O
+
+```
+
+
+
+### 程序控制 I/O
+![Blocing_IO_Model](./imgs/block_io_model.jpg)
+
+```
+
 ```
