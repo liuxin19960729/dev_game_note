@@ -67,7 +67,7 @@ webgl的坐标系统(笛卡尔积 右手定则) 默认 (也可以用其他的)
 
 
 从js里面传入参数到 -->顶点着色器
-    attribute  (传入与顶点相关的数据)
+    attribute  (传入与顶点相关的数据) 只有顶点着色器才能使用
        用来外部-->传入顶点着色器的修饰的参数
        只有顶点着色器能够使用它 
     uniform (对所有顶点都相同的数据与顶点无关)
@@ -108,6 +108,41 @@ vertexArrrib1f(location,v0)
 vertexArrrib2f(loca,v0,v1)
 vertexArrrib3f()
 vertexArrrib4f()
+
+
+
+
+
+
+uniform 将颜色值传给着色器
+
+步骤
+    1.在片元着色器准备uniform
+    2.用uniform向gl_FragColor 进行赋值
+    3.将颜色数据从JavaScript传给uniform变量
+
+
+var u_FragColor = gl.getUniformLocation(gl.program, 'u_FragColor');//从程序获取变量名为u_FragColor的  uniform变量
+
+uniform 修饰的数据赋值之后是一致的,不变的
+
+
+getUniformLocation(program,name):any
+
+program 顶点着色器和片元着色器
+name：着色器被uniform修饰的变量名获取
+
+返回 null或获取的值
+
+
+
+向uniform进行赋值
+
+gl.uniform1f(location,v0)
+gl.uniform2f(location,v0,v2)
+gl.uniform3f(location,v0,v1,v2)
+gl.uniform4f(location,v0,v1,v2,v3)
+
 
 
 
