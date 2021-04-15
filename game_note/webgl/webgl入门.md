@@ -82,5 +82,35 @@ webgl的坐标系统(笛卡尔积 右手定则) 默认 (也可以用其他的)
 
 获取gl.program程序里面的a_position变量名的变量地址
 
+getAttribLocation  返回的值-1 着色器不存在这个属性
+
+>=0 存在这个属性
+
+
+向 attributre 赋值
+
+gl.vertexAttrib3f(location, v0, v1, v2);
+    location  attribute的存储位置
+    v0 attribute的第一个分量 x
+    ....yz
+
+
+
+gl.clear() 清空canvas
+
+gl.drawArrays()开始进行绘制
+
+
+
+
+存在attribute 赋值的四种函数
+vertexArrrib1f(location,v0)
+vertexArrrib2f(loca,v0,v1)
+vertexArrrib3f()
+vertexArrrib4f()
+
+
+
+
 
 ```
