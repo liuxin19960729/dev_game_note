@@ -74,6 +74,34 @@ StoreStore 屏障已经将前面的的本地数据全部刷新到内存
 
 然而 后面的 StoreLoad 屏障的作用是避免与后面的读操作处理器进行重排序
 
+StoreStore屏障
+   禁止上面的写操作和volatile 写操作进行重排序
+
+StoreLoad 屏障
+    禁止上面的volatile 写 与下面的volatile读写进行重排序
+
+jmm 实现特点 ：首先保证正确性，在保证正确性的条件下追求性能
+
+```
+volatile插入的内存屏障
+![volatile插入的内存屏障](./img/volatile读操作插入内存屏障.png)
 
 
+```
+
+LoadLoad 屏障
+    禁止下面所有读操作 和上面的volatile读重排序
+
+LoadStore 屏障
+    禁止下面所有的普通写操作和这个读操作进行重排序
+
+```
+
+#### JSR-133 为什么要增强volatile的语义
+```
+    jsr-133 (旧模型 1.5<) 允许volatile变量和普通变量之间重定义
+
+    >1.5 不允许重排序
+
+    
 ```
