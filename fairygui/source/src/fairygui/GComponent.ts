@@ -5,7 +5,7 @@ namespace fgui {
         public hitArea?: IHitTest;
 
         private _sortingChildCount: number = 0;
-        private _opaque: boolean;
+        private _opaque: boolean;//穿透属性
         private _applyingController?: Controller;
         private _rectMask?: cc.Mask;
         private _maskContent?: GObject;
@@ -20,7 +20,7 @@ namespace fgui {
         public _children: Array<GObject>;
         public _controllers: Array<Controller>;
         public _transitions: Array<Transition>;
-        public _container: cc.Node;
+        public _container: cc.Node;//GComponent   容器节点
         public _scrollPane?: ScrollPane;
         public _alignOffset: cc.Vec2;
         public _customMask?: cc.Mask;
@@ -37,7 +37,7 @@ namespace fgui {
 
             this._container = new cc.Node("Container");
             this._container.setAnchorPoint(0, 1);
-            this._node.addChild(this._container);
+            this._node.addChild(this._container); // 组件节点 this._node  子节点 this._container
         }
 
         public dispose(): void {
@@ -540,7 +540,7 @@ namespace fgui {
         public get opaque(): boolean {
             return this._opaque;
         }
-
+        
         public set opaque(value: boolean) {
             this._opaque = value;
         }

@@ -35,7 +35,7 @@ namespace fgui {
             super();
 
             this._node.name = "GRoot";
-            this.opaque = false;
+            this.opaque = false;//GRoot 顶层ui可穿透
             this._volumeScale = 1;
             this._popupStack = new Array<GObject>();
             this._justClosedPopups = new Array<GObject>();
@@ -411,7 +411,7 @@ namespace fgui {
             pos.y = pos.y / cc.view.getScaleY();
 
             this.setSize(size.width, size.height);
-            this._node.setPosition(-pos.x, this._height - pos.y);
+            this._node.setPosition(-pos.x, this._height - pos.y);//GRoot (0,0) 点左上角
 
             this.updateContentScaleLevel();
         }
