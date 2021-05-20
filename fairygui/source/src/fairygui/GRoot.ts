@@ -229,10 +229,10 @@ namespace fgui {
                     for (var i: number = this._popupStack.length - 1; i >= k; i--)
                         this.removeChild(this._popupStack.pop());
                 }
-            }
-            this._popupStack.push(popup);
+            }//  _popupStack 数组 里面存在 先 弹出 
+            this._popupStack.push(popup);//添加
 
-            if (target) {
+            if (target) { // 让target 节点的 (root -->下一层节点的顶层)节点渲染顺序 >= (让pop 在target 后渲染) 
                 var p: GObject = target;
                 while (p) {
                     if (p.parent == this) {

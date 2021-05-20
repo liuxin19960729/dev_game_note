@@ -22,7 +22,7 @@ namespace fgui {
         private _barStartX: number = 0;
         private _barStartY: number = 0;
 
-        public changeOnClick: boolean = true;
+        public changeOnClick: boolean = true; //点击改变滑动条的值
         public canDrag: boolean = true;
 
         public constructor() {
@@ -156,10 +156,10 @@ namespace fgui {
                 this.changeOnClick = buffer.readBool();
             }
 
-            this._titleObject = <GTextField>(this.getChild("title"));
-            this._barObjectH = this.getChild("bar");
+            this._titleObject = <GTextField>(this.getChild("title"));//值
+            this._barObjectH = this.getChild("bar");//进度条 bar
             this._barObjectV = this.getChild("bar_v");
-            this._gripObject = this.getChild("grip");
+            this._gripObject = this.getChild("grip");//滑动条上的按钮
 
             if (this._barObjectH) {
                 this._barMaxWidth = this._barObjectH.width;
