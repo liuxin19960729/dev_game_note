@@ -213,9 +213,10 @@ namespace fgui {
         }
 
         public setSize(wv: number, hv: number, ignorePivot?: boolean): void {
-            if (this._rawWidth != wv || this._rawHeight != hv) {
+            if (this._rawWidth != wv || this._rawHeight != hv) {//w  h 和 缓存比较 不同才进行设置
                 this._rawWidth = wv;
                 this._rawHeight = hv;
+                //保证不超过设置的范围(对普通组件上面的最大最小的设置)
                 if (wv < this.minWidth)
                     wv = this.minWidth;
                 if (hv < this.minHeight)
@@ -224,6 +225,7 @@ namespace fgui {
                     wv = this.maxWidth;
                 if (this.maxHeight > 0 && hv > this.maxHeight)
                     hv = this.maxHeight;
+                //    dWidth  dHeight 改变的长 宽
                 var dWidth: number = wv - this._width;
                 var dHeight: number = hv - this._height;
                 this._width = wv;

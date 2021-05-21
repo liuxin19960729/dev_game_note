@@ -111,7 +111,7 @@ namespace fgui {
 
             this.adjustModalLayer();
         }
-
+        //把窗口提到所有窗口的最前面
         public bringToFront(win: Window): void {
             var cnt: number = this.numChildren;
             var i: number;
@@ -148,7 +148,9 @@ namespace fgui {
             if (this._modalWaitPane && this._modalWaitPane.parent)
                 this.removeChild(this._modalWaitPane);
         }
-
+        /**
+         * 隐藏所有非模态的窗口
+         */
         public closeAllExceptModals(): void {
             var arr: Array<GObject> = this._children.slice();
             var cnt: number = arr.length;
@@ -158,7 +160,7 @@ namespace fgui {
                     g.hide();
             }
         }
-
+        //隐藏所有窗口。注意不是销毁
         public closeAllWindows(): void {
             var arr: Array<GObject> = this._children.slice();
             var cnt: number = arr.length;
@@ -403,6 +405,7 @@ namespace fgui {
 
         private onWinResize(): void {
             let size = cc.view.getCanvasSize();
+            // winSize
             size.width /= cc.view.getScaleX();
             size.height /= cc.view.getScaleY();
 
