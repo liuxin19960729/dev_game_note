@@ -255,3 +255,86 @@ void c(const char *str) {
 	pp1->age = 25;
 	pp1->name = "刘鑫+1";
 ```
+
+
+结构体 const
+```c
+
+struct Person
+{
+	char *name;
+	short age;
+};
+
+const struct Person p2 = { "liuxin",24 };
+
+(&p2)->age = 100;
+p2.age = 100; 
+使用p2 进行结构体里面的元素进行修改时不允许的
+
+
+但是 
+struct Person *p3 = &p2 ;
+p3->name = "liuxin1";
+p3->age = 25;
+
+用p3结构体指针进行p2地址的赋值
+在对里面元素的修改时能进行修改到的
+
+
+
+
+默认结构体
+test3(struct Person p) {
+	
+}
+他是值传递
+
+我们要对传入的结构体进行引用传递必须使用指针
+
+test3(struct Person *p) {
+	
+}
+
+
+
+1.当我们进行const 修饰结构体方法的形参
+test3(const struct Person *p) {
+
+}
+	p->name = "sss";
+	(*p).name = "ss";
+	上面两种方式对const 修饰的结构体进行修改 编译都不会通过
+
+	p = NULL;但是可以对他赋值为空
+
+
+
+2.
+test3( struct Person * const p) {
+
+}
+	p = NULL; 但是【不】可以对他赋值为空
+
+	里面的值是可以进行修改的
+	p->age = 100;
+	(*p).age = 200;
+
+
+
+即不让他吧结构体指针赋值为NULL也不让他对里面的值进行修改 
+test3(const struct Person * const p) {
+
+}
+
+
+
+
+总结
+	1.当const 左边修饰结构体 *p 时 (.......***p) 可以把p指针赋值为NULL,但是不能修改结构体里面的内容进行修改
+	2.const 只修饰p时 不能把他赋值为NULL(不能修改指针的值),可以修改结构体的内容
+	
+
+
+
+```
