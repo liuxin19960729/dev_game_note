@@ -31,7 +31,7 @@ Editor.Panel.extend({
                     this.packagename = event.target.value;
                 },
                 onDirPath(event){
-                    this.dirpath = event.target.value;
+                    this.dirpath = event.target.value==""?"scripts":event.target.value;
                 },
                 onFileName(event) {
                     this.filename = event.target.value;

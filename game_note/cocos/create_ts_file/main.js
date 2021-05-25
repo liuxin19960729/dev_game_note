@@ -18,10 +18,17 @@ module.exports = {
     'cr-file': function (event, f_dirpath,f_name, p_name) {
       try{
         let r_url= Editor.url('packages://create_ts_file/teample.txt', 'utf8');//读地址
+        let w_dir_path=Editor.url('db://assets/'+f_dirpath, 'utf8');
         let w_url=Editor.url('db://assets/'+f_dirpath, 'utf8')+"\\"+f_name+".ts";
         Editor.log(f_name)
         Editor.log(w_url);
-        if(fs.existsSync(w_url)){
+        //判断有没有目录
+        if(!fs.existsSync(w_dir_path)){
+           fs.mkdirSync(w_dir_path);
+        }
+        
+        //判断是否有文件夹
+        if(Editor.assetdb.exists(w_url)){
             throw new Error("该路径已经存在该文件"+w_url);
         }
         let data= fs.readFileSync(r_url)
