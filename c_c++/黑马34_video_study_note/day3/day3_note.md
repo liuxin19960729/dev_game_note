@@ -1,7 +1,7 @@
 
 ### 类型转换
 
-```
+```c
 隐式
 
     char ,short ->singed int ->unsinged int ->long ->double
@@ -23,7 +23,26 @@
 
      注意  当小转大 不可以发生数据丢失
            当大转小可能发生数据丢失
+
+
              
 强制
+   
+	float price = 3.4f;
+	int gotNum = 4;
+	double totalPrice1  = price * gotNum;
+	printf("购买总价 %lf\n", totalPrice1);
+	double totalPrice2 = (int)price * gotNum;
+	printf("购买总价 %lf\n", totalPrice2);
+	double totalPrice3 = (int)(price * gotNum);
+	printf("购买总价 %lf\n", totalPrice3);
+
+    总结
+        大空间类型转小空间类型需要强转
+        但是有可能损失精度
+
+        上面有两种强转的方式
+            1.变量的强转
+            2.表达式的强转
 
 ```
