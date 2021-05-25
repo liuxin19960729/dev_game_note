@@ -1,0 +1,20 @@
+{
+    "name": "create_ts_file",
+    "version": "0.0.1",
+    "description": "创建CocosTs文件",
+    "author": "刘鑫",
+    "main": "main.js",
+    "main-menu": {
+      "fgui/tsFile": {
+        "message": "create_ts_file:openPanel"
+      }
+
+    },
+    "panel": {
+        "main": "panel/index.js",
+        "type": "dockable",
+        "title": "fgui ts file create",
+        "width": 400,
+        "height": 300
+      }
+  }
