@@ -88,4 +88,67 @@ stream 读取字符串的位置 stdin 标准输入
 
 
 
+
+int puts(const char *s) 
+将一个字符串写出到屏幕
+
+return  >=0  success 
+       
+        <0 fail 
+  总结  puts 函数输出完毕自动加上\n(换行)
+
+
+
+
+fputs(const char *s,FILE *stream)
+    将一个字符串写出到屏幕
+
+    s 字符串
+    stream 写出到哪里(stdout 标准输出文件)
+
+    和puts 区别 结束默认不加 \n(换行符)
+
+
+
+
+	//puts
+	char *str = "刘鑫";
+	puts(str);//这个函数屏幕的标准输出 会在字符串的后面默认的加上 \n
+
+	fputs(str, stdout);//stdout 屏幕的标准输出 默认不加\n 
+	system("pause")
+
+
+fputs 和 puts printf 他们都是读到字符串\0结束符的结束
+
+
+
+
+size_t strlen(const char * s) 获取字符串的有效长度(不包含\0)
+
+printf("len %d\n",strlen(str)); //字符串包不含结束符的字符串长度
+
+自我实现 
+typedef  unsigned int u_int;
+ u_int strLenLx(const char * str) {
+	 u_int count = 0;
+	while(1) {
+		char  c = *(str + count);
+		if (c == '\0') break;
+		count++;
+	}
+	return count;
+}
+
+
+优化 
+typedef  unsigned int u_int;
+ u_int strLenLx(const char * str) {
+	 u_int count = 0;
+	while(*(str + count)!='\0') {
+		count++;
+	}
+	return count;
+}
+
 ```
