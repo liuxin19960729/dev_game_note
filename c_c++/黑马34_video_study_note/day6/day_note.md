@@ -92,3 +92,91 @@
 
 
 ```
+
+
+
+
+```
+exit()函数  退出(退出的是怎个程序)
+
+  return 返回值给调用者
+
+  exit 退出当前的程序  
+
+
+
+
+
+
+
+
+
+多文件编程
+    定义: 将多个含有不同函数功能的的函数模块，生成一个.exe文件
+
+    头文件(防止偷文件重复引用)
+       1. #program once  只导入一次 --只在win中有用
+       2.  #ifndef __HEAD_H__ 
+           #define  __HEAD_H__ 
+                防止函数声明
+                include 
+                类型定义
+                宏定义
+           #endif 
+
+
+
+head.h
+#ifndef  __HEAD_H__
+
+#define __HEAD_H__
+
+#define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+
+
+int _cus_add(int a, int b);
+int _cus_sub(int a, int b);
+int _cus_mul(int a, int b);
+
+#endif // ! __HEAD_H__
+
+
+
+
+
+
+custom_math.h
+int _cus_add(int a, int b) {
+	return a + b;
+}
+int _cus_sub(int a, int b) {
+	return a - b;
+}
+int _cus_mul(int a, int b) {
+	return a * b;
+}
+
+
+
+
+launch.c
+#include "head.h"
+int main() {
+	int a = 100;
+	int b = 130;
+ 
+	printf("%d %c %d = %d \n", a, '+', b, _cus_add(a,b));
+	printf("%d %c %d = %d \n", a, '-', b, _cus_sub(a, b));
+	printf("%d %c %d = %d \n", a, '+', b, _cus_mul(a, b));
+	system("pause");
+	return 0;
+}
+
+
+
+
+
+```
