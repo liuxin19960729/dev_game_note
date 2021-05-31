@@ -251,6 +251,7 @@ p++ 指针++有野指针的风险
 
 
 自实现strlen()函数
+方法A
 size_t strLen(const char * str) {
 	size_t num = 0;
 	while (*(str+num)!='\0')
@@ -260,8 +261,74 @@ size_t strLen(const char * str) {
 	return num;
 }
 
+方法B
+
+size_t strLenPointMethod(const char * str) {
+	char * p = str;
+	while ((*p)!='\0')
+	{
+		p++;
+	}
+	return p - str;//返回 地址之间有多少个元素
+}
+
+
+
+
 ```
 
+
+
+
+指针的比较
+
+```
+> <  ==
+
+
+在编译阶段和运行阶段是能使用比较运算符的
+
+
+数组是有意义的
+对于普通的变量之间指针地址比较是没有实际意义的
+
+
+
+变量判断是否为null
+void pointCmp() {
+	int * i_point = NULL;
+	if (i_point == NULL)
+		puts("null");
+	else
+		puts(" not null");
+}
+
+
+```
+
+
+指针数组
+```
+
+int * arr[]={}
+int * [] (整形指针数组)
+
+里面元素存储的是整形的指针地址
+
+
+
+指针数组他的本质是一个二级指针
+
+一个存储地址的数组 数组内部所有元素都是地址
+
+
+二维数组也是一个二级指针
+
+
+
+```
+指针类型的数组
+![指针类型的数组](./img/指针类型数组.png)
 
 
 
