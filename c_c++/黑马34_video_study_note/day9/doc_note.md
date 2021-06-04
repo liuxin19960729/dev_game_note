@@ -228,6 +228,95 @@ linux 32位os
 ```
 1.当全局和局部变量重名
    就近原则
-
+ 
    
 ```
+
+heap 空间的使用
+
+```
+
+void* malloc(size_t size)
+  返回内存空间的首地址
+  我们通常把他当做数组使用
+
+void free(void *ptr)
+
+
+
+
+注意：当我们使用完了我们申请的heap 空间一定要进行释放内存
+
+
+
+
+使用对空间的注意事项
+    1.heap上面申请的空间当成数组进行使用
+    2.free后的空间不会立即失效
+       做法  将他对应的地址指针设置为NULL
+    3.free的地址必须是malloc 申请的地址否则会 异常出错
+
+    4.如果malloc 之后的地址一定会变化，就需要使用 临时变量保存一份地址值
+
+    
+```
+
+
+
+二级指针对应的heap空间
+
+```
+int **p (int **) malloc(sizeof(int )*10)
+
+int**p ===int * p[] 数组的元素都是 int * 类型
+
+
+二级指针案例
+
+ #define _CRT_SECURE_NO_WARNINGS
+#include <stdio.h>
+#include <stdlib.h>
+#include <string.h>
+int main() {
+	//int **p  =int * p[]
+	//先申请p空间 size =3
+    
+	int **p = (int **)malloc(sizeof(int*)*3);
+	//在申请 p 数组对应的元素地址 对应内存的空间 
+	for (size_t i = 0; i < 3; i++)
+	{
+		p[i] = (int *)malloc(sizeof(int)*3);
+		for (size_t j = 0; j < 3; j++)
+		{
+			p[i][j] = j;
+		}
+	}
+
+	//打印数据
+	for (size_t i = 0; i < 3; i++)
+	{
+		
+		for (size_t j = 0; j < 3; j++)
+		{
+			printf("%d ", p[i][j]);
+		}
+	}
+
+	//释放内存
+	for (size_t i = 0; i < 3; i++)
+	{
+		free(p[i]);
+	}
+	free(p);
+	p = NULL;
+
+	system("pause");
+	return 0;
+} 
+
+
+```
+
+上面案例的图示
+![](./img/day_9_malloc_二级指针.png)
+
