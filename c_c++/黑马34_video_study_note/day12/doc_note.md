@@ -58,3 +58,90 @@ struct  Pro
 
 
 ```
+
+结构体的内存结构图
+
+```c
+# include <stdio.h>
+struct STUDENT
+{
+    char a;
+    int b;
+}data;
+int main(void)
+{
+    printf("%p, %p\n", &data.a, &data.b);  //%p是取地址输出控制符
+    printf("%d\n", sizeof(data));
+    return 0;
+}
+
+输出结果
+00427E68, 00427E6C
+8
+按照我以前的认为机构体
+  char 1 byte
+  int 4  byte 
+  这个结构体的占用内存大小   1+4=5
+
+  然而输出8  ？？？？
+
+  这是因为结构体存在字节对齐的概念
+  怎样对齐？？
+        按照结构体中占用最多字节数的内省为标准，在给成员分配内存时都要与这个长度为标准。             
+
+      上面代码结构体储存内存
+        
+        a null null null b
+
+
+
+
+      
+
+
+
+第二种结构体
+
+struct STUDENT
+{
+    char a;
+    char b;
+    int c;
+}data;
+
+内存结构
+a b null null b
+
+
+
+
+
+
+typedef struct MyStruct
+{	
+	char a;
+	int c;
+	char b;
+} data;
+
+
+
+打印的值
+size of 12
+a 00B3F9E4
+c 00B3F9E8
+b 00B3F9EC
+
+a null null null  a(int)  b null null null
+
+
+
+总结：
+      1.结构体类型大小的对齐的基准是整个结构最大的类型占用的空间的大小  
+
+
+
+
+
+
+```
