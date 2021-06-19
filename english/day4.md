@@ -78,7 +78,7 @@ quit 退出 放弃 (出人意料的放弃)
 ```
 
 
-## bind  捆绑
+## bind  捆绑 v
 ```
 
 
@@ -155,7 +155,7 @@ The is a dog barking at the door od the country bar
 
 bargain 便宜货 交易 
 
-Some prople would like to do shooping on Sundays since they expect to pick up owounderful bargins in the markets.
+Some people would like to do shooping on Sundays since they expect to pick up owounderful bargins in the markets.
 
 
 ```
@@ -233,7 +233,7 @@ based on 以.....为基础(具体的基础)
     这部小说是以历史事实为根据的
 
 
-basic 基本的
+basic adj  基本的  基础
 
 the baisc vocabulary 基本词汇
 
