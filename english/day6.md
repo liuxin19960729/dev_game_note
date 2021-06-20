@@ -144,7 +144,7 @@ v 遵守 忍受
 
 abide by low  遵守法律
 
-forbid  禁止组织 
+forbid  禁止  
 
 
 forbid spitting  禁止随地吐痰
