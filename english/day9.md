@@ -67,7 +67,7 @@ careful 仔细的 小心的
 
 Be careful!要小心 注意安全
 
-be care with sth 对 sth 非常的细心
+be careful with sth 对 sth 非常的细心
 Be careful with your work. 对你的工作要细心认真
 
 cautious 小心的 谨慎的  (提前进行预防可能出现的问题)
@@ -133,5 +133,5 @@ casual
     ual  adj后缀
    (突然降落到你旁边)  偶然的 临时的
 
-   
+
 ```
