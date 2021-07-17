@@ -55,6 +55,43 @@ f=c/λ
 
 f=c/λ=c/(c*T)=1/T :(1s能执行多少个周期)
 
+f 频率 不会改变  =1/T 只和周期有关系 和什么介质没有关系
+c 速度 是和不同的介质有关系
 
+q(能量)
+
+
+q=hf=(hc)/(λ)
+h=6.63*10^-34  h(普朗克常数)
+```
+
+### Spectral(adj 光普的) Energy 
+```
+How is the energy distributed across wavelenghts?
+
+
+q[500,600]=10.2 :wavelength from 500 to 600,photons counts all enegry 10.2J
+
+
+a more commonly used system is divide  the energy 
+ form example  
+10.2/100 =0.102 J(nm)-1
+波长每个单位的能量0.102J
+
+The size of interval  little effect that  the overall sizeof of the numbers
+
+
+
+rather than 而不是
+
+density 密度
+
+
+在图像学中 rarely energy,usually use spectral energy
+
+
+```
+## Power
+```
 
 ```
