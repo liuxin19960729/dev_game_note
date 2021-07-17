@@ -93,5 +93,77 @@ density 密度
 ```
 ## Power
 ```
+effect: estimate a rate of enegry production for light source this rate called power.
 
+
+units w or j per s.
+
+for example 
+
+100w light bulbs 
+a second enegry is 100J
+1oow power of light bulbs producted actually product less than 100w ,beacause of heat(热能) loss
+
+
+
+λ=500nm
+
+f=c/λ=3*10^8ms^-1/(500*1o^-9)=6×10^14 s^-1
+
+
+h=6.63*10^-34  h(普朗克常数)
+q=hf=4*10^-19J
+
+1*10^6/4*10^-19J=0.25*10^25=10^20(大约)
+100w的灯大约 per second product 10^20 photons.
+
+
+
+Φ formal standard  spectral enegry symbol
+
+
+note:
+  spectral enegry source light smaller number enegry.
+
+
+
+ Φ = Δq/(ΔtΔλ).  
+Δt open for a time interval;
+
+```
+
+## irradiance 辐射度
+```
+How much light hits this point.
+
+   sensor             last section
+        -------ΔA-------
+       ΔA area smaller than light filed being measured.
+
+H:spectral irradiance 
+spectral irradiance : 单位面结功率
+
+H=ΔΦ/ΔA
+H= Δq / ΔA ΔtΔλ
+
+ΔA  辐射面积
+
+lisght refelected as irradiance is called radiant exitance.(出射度) 
+
+
+same point potentially irradiance and radiant exitance.
+
+
+
+```
+## Radiance
+```
+although irradiance know how much light arriving point but it tells us little about the direction
+that light come from.
+
+通过辐射知道一个点被哪些光照射到，不知到光到照射方向
+
+
+resp=ΔH/Δσ
+=Δq / ΔA ΔtΔλΔσ
 ```
