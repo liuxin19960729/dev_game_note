@@ -148,7 +148,7 @@ H= Δq / ΔA ΔtΔλ
 
 ΔA  辐射面积
 
-lisght refelected as irradiance is called radiant exitance.(出射度) 
+light refelected as irradiance is called radiant exitance.(出射度) 
 
 
 same point potentially irradiance and radiant exitance.
@@ -166,4 +166,7 @@ that light come from.
 
 resp=ΔH/Δσ
 =Δq / ΔA ΔtΔλΔσ
+
+
+radiance property is dodes not along a line .
 ```
