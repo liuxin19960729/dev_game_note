@@ -63,5 +63,57 @@ each piexl basic task is  to find object that is seen  at that  pixel's position
   每个像素的基本任务去寻  在图片上这个位置能看的见的对象
  
 
+any objects that  is seen  by pixel must intersect viewing  ray .
+
+emanate v 生产 散发
  
+The particular objects We want is the  one 
+intersects viewing raying nearest the camera。
+
+详细的对象我想一定是个在摄像机附近的相交视线里
+
+
+it(particular object) blocks  the view of any  other objects   behind   it .
+
+Once that objects is found . 
+
+shading adj 阴影的
+
+surface normal 曲面法线
+
+desired adj  渴望的  desire  v 渴望
+
+
+baisc ray tracer has three part 
+
+1.ray generation , computes the origin and direction of each piexls viewing ray based  on the camera  geometry .
+
+based  on the camera  geometry  基于摄像机集合学
+
+
+
+ computes the origin and direction of each piexls viewing  ray
+计算每一个像素视线的原点和方向
+
+
+
+2.ray intersection(光线交叉)  --find  closest objects intersecting the viewing ray.   
+找到 最近的对象和视线相交
+
+
+2.shading ，-- computes  piexls color base on  the tesult  of ray intersection.
+
+
+
+* The structure of basic ray tracing program is :
+
+
+for each pixels 遍历每一个像素点
+    compute viewing ray // 计算观察视线
+
+    find first object hit by ray and its surface normal n
+    set pixel color to value computed from hit point ,light and n.
+
+ 
+      
 ```
