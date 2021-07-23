@@ -117,3 +117,61 @@ for each pixels 遍历每一个像素点
  
       
 ```
+
+## perspective 
+```
+n 远景 透视图
+
+
+
+approach for (n 方式 v走进)
+
+approach for both art and photography.
+
+
+projection n 投射
+
+paraller projection 平行投射
+
+mapped to 2D  moving them along a projection.
+沿着投影移动动他们映射到2D.
+
+
+
+along a projection direction util they hit image plane 。
+
+
+choice of projection direction and image plane.
+
+
+oblique 
+     n 倾斜物
+     adj 倾斜的
+     vi 倾斜
+
+
+Paraller projection often used for mechanical and architecture .
+
+
+pre zer ve  
+   n 保护区 禁猎区
+   v 保护
+
+
+
+paraller projection advantage :平行投影的优势
+
+
+
+recede 
+   vt 后退 减弱
+   vi 回退
+
+
+
+paraller lines receding into the distance do not appear  paraller.
+
+beacase eyes and camera don't collect light from single viewing direction .
+As has recognized by artists   since the Renaissance .
+
+```
