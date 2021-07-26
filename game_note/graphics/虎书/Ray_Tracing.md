@@ -255,4 +255,14 @@ generally  adv 通常地 普遍地
 
 behind prep 在....后面
 
+
+
+computing a viewing ray ,We need to need e(orign) and s.
+
+
+
+actual adj 事实上 实际上 
+actually adv 事实上地 实际地
+
+
 ```
