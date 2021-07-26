@@ -175,3 +175,68 @@ beacase eyes and camera don't collect light from single viewing direction .
 As has recognized by artists   since the Renaissance .
 
 ```
+
+
+```
+oblique adj 倾斜的   n 倾斜物
+
+advantage n 优势 利益
+
+as a  result 结果 
+as  a result paraller lines receding into  distance do not appear not paraller .
+
+
+
+
+perspective  projection 透视投影
+
+
+farther   far 比较级 
+         adj 更远的
+
+
+natural adj 自然的
+        n 自然的事物
+naturally adv 自然地
+
+
+
+perspective projection is natually viewport ,objects farther   objects natually viewprort beacome smaller.
+
+
+
+A perspective view is determined by the choice of viewpoint and image plance . (透视被视角和 物体的位置决定)
+
+natural adj 自然的
+
+manual adj 手动的
+
+direct adj 直接的 
+      n
+
+
+They are drawn where meet a  view plant in front of the eye .
+
+```
+
+
+## Computing Viewing Rays
+```
+work out 解决
+There are many ways to work out the details of camera geometry.
+
+
+In order to 为了
+
+
+really  adv 是实地 真正地
+
+
+A ray really just a origin and propagation direction .(射线  目标点 =目标和+传播方向)
+
+
+interpret 
+      vt vi 解释 说明
+
+
+```
