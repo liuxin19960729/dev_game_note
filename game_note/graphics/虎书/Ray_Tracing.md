@@ -239,4 +239,20 @@ interpret
       vt vi 解释 说明
 
 
+give
+  v 给 产生 让步 举办
+
+given 
+   give 的过去分词 
+   vt 给予
+   adj 赠予 沉溺于  规定的
+  
+
+
+general adj   一般的  普通的
+
+generally  adv 通常地 普遍地
+
+behind prep 在....后面
+
 ```
