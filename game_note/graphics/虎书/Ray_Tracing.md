@@ -265,4 +265,84 @@ actual adj 事实上 实际上
 actually adv 事实上地 实际地
 
 
+diffcult adj 困难的
+
+if we look at the problem in the right coordinate system .
+
+orthonormal  adj 标准正交的 正规化的
+
+
+
+All of our ray generation methods start from orthonormal coordinate frame  konws as the camera frame .
+
+
+
+denote vt 表示 指示
+
+
+
+which We'll denote by e ,for the eye point.
+ 
+
+
+right handel coordinate system。右手坐标系统
+
+
+
+
+most common way 常见的方法
+
+
+event though  虽然 即使
+
+
+
+Even though a paraller doesn't have a viewport per se . 
+   (平行 视线没有视点)
+
+
+
+The viewing rays should start on the plane defined by the point e and the vector u and v .  
+
+
+
+remain v 剩下 仍然 
+
+require v 需要 要求 命令
+
+
+suppose  v 假设 任务 猜想 
+
+
+dimension n 尺寸 容积
+           vt 测量  尺寸
+
+
+
+l and r are the position of  left and right edges  of the image .
+
+
+mesure n 测量  尺寸
+        v 测量 估算
+
+
+
+rectangle n 长方行 矩形
+
+
+apart adj 相聚 分离  与众不同
+      adv   相聚 分离    与众不同
+
+
+
+horizontal n 水平 
+           adj 水平的
+horizontally 水平地
+
+vertical 
+    n 垂直线
+    adj 垂直的
+vertically adv 垂直地
+
+
 ```
