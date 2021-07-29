@@ -73,8 +73,41 @@ past on  粘住
 
 rare 
     adj 稀有  稀薄  半熟
-    adj 杰出 极度的  非常号的
+    adj 杰出 极度的  非常好的
 
-    
+
+independent adj 独立的 
+
+approxmate adj 逼近的 接近的
+          v 逼近 接近
+
+
+beside  prep 除....之外
+
+curve n 曲线 弯曲  v使....弯曲
+
+A vector image is described by stroring descriptions  shapes-areas of color  bounded  by lines  or   
+
+essence n 本质 实质 香精
+
+amount n 总计 合计
+       v 总和
+
+
+advantage n 优势 利益
+v 获利 有利可图
+
+resolution  n 分变率 决议 决心
+
+resolution independent 分辨率无关
+
+correspond v 符合 一致  通信 相应
+
+cripness n易碎
+precision  adj 精确的  精密的  n 精确 精密
+
+
+
 
 ```
+
