@@ -107,7 +107,54 @@ cripness n易碎
 precision  adj 精确的  精密的  n 精确 精密
 
 
+attention  n 关心 注意力 
 
+
+intensities 强度 
+```
+
+
+
+## Raster Devices 
+```
+
+Before  在...之前
+
+Before discussing raster image in the abstract.
+在讨论抽象的光栅化图像之前
+
+instructive  adj 有益的 教育的
+
+categorize vt 分类
+
+hierarchy n 层级 层次
+transmissive adj 传送的 传递的
+emissive adj 放射的
 
 ```
 
+
+### displays
+```
+
+universal 
+  adj 一般的 普通的
+universally adv 一般地 普通地
+
+
+separate adj 单独的  分开的 
+v 分离 分开
+
+emissive adj 放射的
+
+illuminate v 照亮 阐明
+
+
+compose v 构成 组成 排版
+
+
+semiconductor n 半导体
+
+
+
+```
