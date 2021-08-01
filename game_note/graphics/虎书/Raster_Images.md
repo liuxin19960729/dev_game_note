@@ -155,6 +155,117 @@ compose v 构成 组成 排版
 
 semiconductor n 半导体
 
+own v 承认 拥有
 
+color display  彩色显示器
+
+The pixels in color display   are( pixels 第三人称复数)
+
+divide v  分开 
+
+
+
+When the display is viewed from a distasnce .(显示器被从远处观看)
+
+the eye can't separate the individual subpixels .
+   
+perceive v  感知 认识
+
+the eye perceive color  of mixture red and blue and green.
+   眼睛不会感知子像素的衍射，会感知红黄绿的混合颜色
+
+
+
+lcd(液晶下显示器)
+  
+
+lc is a material .
+
+
+rotate v 旋转  使旋转 
+
+polarazation n 极化 偏振  两级分化
+
+degree n 等级 层级
+
+adjust v 调整 矫正 适应 
+
+
+the degree of roation can be adjusted by an applied voltage 
+
+voltage n 电压
+
+
+polarazating film 偏光板
+
+assume  vi vt 假想  设想
+
+horizontal n 水平线 
+
+orient v  方向 朝向
+
+escape v 逃避 避免
+
+maxinum itensity 最大的强度 
+
+
+light itensity (valtage controller  degree  rotation  of   polarazition film  to decide light passe throught )
+
+
+lcd have red green and blue subpixels within each pixel which are three independent piexls with red blue and green over filters over them . 
+
+
+
+
+fundamental adj 基本的 根本的 
+            n 基本的原理 基本原则
+
+fundamentally adv 
+
+
+dimension n 尺寸 容积
+
+
+resolution mean  the dimentions of the  pixels  grid. 
+
+
+```
+
+
+
+## Hardcopy Devices
+```
+Hardcopy  硬拷贝
+
+
+permanent  adj 永恒的  永久的
+
+
+
+```
+
+
+
+## Image Pixels  and Geometry
+```
+geometry n 几何学
+
+seen v 看见 看望
+
+
+form v 建立 构造
+     n 形状
+
+
+reason n 理论
+
+interpret v 解释 口译
+
+fall v 落下 跌倒 下降
+
+fraction n 分数 部分 稍微 小部分
+
+
+almost adv 差不多 几乎
 
 ```
