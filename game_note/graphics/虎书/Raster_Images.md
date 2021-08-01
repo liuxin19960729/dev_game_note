@@ -297,5 +297,71 @@ consistent adj 一致的 坚持的
 
 In this book raster images (i,j)  i cloumn j row
  
- 
+
+
+indicate  v 暗示 指示 预示
+
+sample n 样本 样品  v 品尝 体验
+
+
+rectangular  is widh nx,height ny, because piexl being on the grid center ,so real doamin 
+[-0.5,nx-0.5] x  [-0.5,ny-0.5]
+
 ``` 
+
+
+
+## Pixel Vallues.
+```
+so far 到目前为止  迄今为止
+
+suggest v 提议 建议 启发
+
+
+
+piexls arrays of floating-point number.
+
+
+precision n 精度 精密度 精确
+          adj 精密的 精确的
+
+scarce adj 稀有的  缺乏的 不足的
+       adv 仅仅   几乎不 几乎没有
+
+
+
+consume v 消耗 耗尽
+
+
+Less range is required for image  that are meant to be displayed directly.
+图片为了能够直接展示,需要减少图片的范围
+
+
+
+bound  adj 限制的
+unbound adj 无限制的
+
+
+reason n 原理  principle n 原理 概念 本质
+notion 概念
+
+decide v 决定 解决 判决
+decided adj 明确的 显然的
+decidedly  adv  果然地 显然地
+
+
+finite 有限的 限定的
+
+
+sufficient adj  足够的 充足的
+
+simplicity n 朴素 简易 愚蠢 
+
+for instance 例如
+
+
+distinguish 
+   v  区分 辨别
+
+typical adj  典型的 特有的 象征的
+```
