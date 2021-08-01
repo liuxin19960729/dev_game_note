@@ -268,4 +268,33 @@ fraction n 分数 部分 稍微 小部分
 
 almost adv 差不多 几乎
 
-```
+idealized adj 理想化
+
+
+
+reason n 原理
+notion n 概念
+
+
+mesurement n 量度
+
+
+correspond v 符合 一致 相应 通信
+
+
+vicinity n 邻近  附近  近处
+
+
+mundane adj 世俗的 平凡的  世界的 宇宙的
+
+
+matter of convension   约定事件
+
+
+establish v 建立 创建 
+
+consistent adj 一致的 坚持的
+
+In this book raster images (i,j)  i cloumn j row
+ 
+``` 
