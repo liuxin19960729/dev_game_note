@@ -476,4 +476,111 @@ For our purposes we can consider this
 为了我们的目标，我们会认为这黑色和 监视器完全打开为白色
 
 
+
+We assume a numeric description
+of pixel color that ranges from zero to one
+
+谓语  assume 
+
+我们假设一个数值的像素颜色描述 是从0到1.
+
+
+
+Black is zero, white is one, and a
+gray halfway between black and white is 0.5.
+
+
+谓语 is 
+主系表的结构
+
+halfway adj  中途的 不彻底的
+             adv 到一半 
+
+黑色是0,白色是1, 灰色 是 黑色到白色之间0.5.
+
+
+
+
+Note that here “halfway” refers to
+the physical amount of light coming from the pixel, rather than the appearance.
+
+
+谓语  refer 参考  涉及
+
+appearance n 外观  外貌 
+注意 这里的一半涉及到物理光数量来到像素，超过外观
+
+
+
+The human perception of intensity is nonlinear and will not be part of the present
+discussion; see Chapter 20 for more.
+
+谓语  is 
+
+perception  n 观察能力 认知能力 
+人类 认知的层度是  非线性 和 将不会在这部分讨论，更多看第20章。
+
+
+
+
+There are two key issues that must be understood to produce correct images
+on monitors
+
+
+there are 谓语  有
+
+为了在显示器显示正确的图片，有两个关键的问题一定被懂得。
+
+
+
+The first is that monitors are nonlinear with respect to input.
+
+谓语 is
+
+the first 首次
+
+首先 显示器是非线性 为遵守输入的。
+
+
+if you give a monitor 0, 0.5, and 1.0 as inputs for three pixels, the
+intensities displayed might be 0, 0.25, and 1.0 (off, one-quarter fully on, and
+fully on).
+
+
+如果你给显示器输入 0，0.5 1.0 三个值给三个像素。这个显示强度可能是 0，0,25和 1
+
+
+
+As an approximate characterization of this nonlinearity, monitors are
+commonly characterized by a γ (“gamma”) value
+
+approximate adj 接近的 大概的
+            v 接近  近视
+
+characterization  n 描述 特性描述
+
+
+This value is the degree of
+freedom in the formula
+  
+谓语 is  be动词
+freedom  自由 自主 直率
+ 
+formula n 公式 准则  配方 
+在公式里面 值是 直率的程度
+
+formula: 
+displayed intensity = (maximum intensity)a γ
+
+explain   v 说明 解释
+
+where a is the input pixel value between zero and one。
+
+在那里  a 是  输出的的像素值在 0到1之间
+
+ For example, if a monitor
+has a gamma of 2.0, and we input a value of a = 0.5, the displayed intensity
+will be one fourth the maximum possible intensity because 0.5 2 = 0.25.
+
+例如:如果 显示器 有的gamma值为3。0，和 我们输入的值是0，,显示器展示的强度将是最大可能强度的1/4 因为 0.5^2=0.25
 ```
