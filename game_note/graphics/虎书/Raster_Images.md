@@ -364,4 +364,116 @@ distinguish
    v  区分 辨别
 
 typical adj  典型的 特有的 象征的
+
+
+grayscale 灰度图 灰度模式
+
+intermediate n 中间物
+             adj 中级的  中间的
+
+
+desire n 欲望 渴望 
+       v 想要
+
+
+8bit RGB fiexd range color(24 bits) 
+
+
+
+professional adj 专业的 职业的 
+              n 专业人员 
+
+
+
+intermediate format for image processing for fixed-range images .
+
+
+
+
+ radiolgy  n  放射学 放射科
+
+
+ precison n 精度
+
+
+
+ reducing  reduce 的现在式  v 减少 
+ n  减低 减重量法  减肥法
+
+
+ distinctive adj 独有的 特有的 与众不同的
+
+ artifact  人工制品
+
+ flaw n 缺陷 
+
+quantization n 量子化 数字化
+
+be partcularly insidious 尤其中重要
+
+
+objection n 缺陷 反对 缺点
+ojectionable  adj 讨厌的 引起反对的
+
+```
+
+## Monitor Intensities  and Gamma
+```
+modern n 现代人  有思想的人
+      adj 现代的 近代的 时髦的
+
+
+All modern monitors take digital input for the “value” of a pixel and convert this
+to an intensity level
+
+take 谓语
+
+主语   All modern monitors  (现代的显示器)
+
+宾语 digital input  数字输入
+
+
+宾语从句
+for the “value” of a pixel and convert this
+to an intensity level
+
+
+现代显示器是用数字信号输入，在内部把这个值转化为像素和转化为对应的强度级别。
+
+
+
+
+
+Real monitors have some nonzero intensity when they are
+off because the screen reflects some light.
+
+
+谓语   have 有
+
+主语 (谓语的发送者)  Real monitors 实时监控
+
+宾语 some nonzero intensity  非零级别
+
+
+从句
+when they are
+off because the screen reflects some light.
+当他们是off 因为这屏幕反射一些光的时候
+
+
+
+
+For our purposes we can consider this
+“black” and the monitor fully on as “white.”
+
+谓语 consider 认为
+
+主 we 
+
+宾语  this
+“black” and the monitor fully on as “white.”
+
+为了我们的目标，我们会认为这黑色和 监视器完全打开为白色
+
+
 ```
