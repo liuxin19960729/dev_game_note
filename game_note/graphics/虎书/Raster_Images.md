@@ -583,4 +583,81 @@ has a gamma of 2.0, and we input a value of a = 0.5, the displayed intensity
 will be one fourth the maximum possible intensity because 0.5 2 = 0.25.
 
 例如:如果 显示器 有的gamma值为3。0，和 我们输入的值是0，,显示器展示的强度将是最大可能强度的1/4 因为 0.5^2=0.25
+
+
+
+
+approximation n 近似法 近似值
+
+accuracy n 精确值
+
+estimate v 估算 预算
+
+
+visual  adj 视觉的 栩栩如生的
+
+guage  n 测量器 容器容量值
+       v  测量
+
+adjust v 调整 校准 
+
+brightness n 亮度 聪明
+
+
+
+blur n 模糊的事物  污迹 
+     v  变模糊 使暗淡
+
+
+
+overall adj  全部的 全体的
+        adv 全部地 总体来说
+
+
+ plug  n 塞子 插头
+       v 插上 塞上
+
+
+ Another important characteristic of real displays is that they take quantized input
+values.      
+
+谓语  is 
+
+主语 另一个真实的显示
+
+他们量子化输入值
+
+
+manipulate vt  操作 操纵   巧妙的处理 篡改
+
+most common 最常用 做通用
+
+
+exact adj  准确的 精确的 
+      v 要求 强求  急需  勒索钱财
+
+They might also  vary(谓语 变化) with viewing angle.
+
+
+accurate adj 精确的
+
+```
+
+
+##  RGB Color
+
+```
+Most computer graphics images are  defined in the terms of rgb color.
+
+simple adj 简单的 天真的 单纯的
+       n  愚蠢的行为  笨蛋   出生低微
+
+perspective n 观点 远景 透视图
+      adj 透视的
+
+facility n 设备 设施
+
+
+mechanics n 力学 结构  技术 机械学
+
 ```
