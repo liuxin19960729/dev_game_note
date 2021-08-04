@@ -660,4 +660,104 @@ facility n 设备 设施
 
 mechanics n 力学 结构  技术 机械学
 
+
+
+
+dim adj 暗淡的 
+    v 变暗淡 使暗淡
+
+indicate v  暗淡 指示
+
+axes  n 轴心 轴线
+
+
+fold   v 折叠 包围  
+       n 羊圈
+unfold v 展开
+
+actual adj  实际的 现存的
+
+take up 拿起
+
+thus adv  因此 从此
+
+
+separate adj 分开的 分手的
+       v 分开
+
+composite v 合成 复合
+          adj  复合的 合成的
+          n 合成物
+
+occur  v  发生 出现
+
+
+```
+
+## Alpha compositing
+```
+透明度 复合物
+
+opaque adj 不透明的
+       n 不透明物
+       v 使不透明  使不反光
+
+
+entire adj 整个的 完全的
+entirely adv   完全地  彻底地
+
+
+transparent adj 透明的 显然的
+
+region n 地区  部位  领域
+
+frequent adj  时常的  惯常的
+
+hole n 洞 穴
+     v 凿洞
+
+
+fraction n 部分 分数
+
+blended 
+c = αc f + (1 − α)c b . 
+
+
+
+interpretation n 解释 翻译 演出
+
+
+
+paint n 油漆 颜料  绘画功能
+      v 画  油漆  
+
+
+
+chunk  n 大块 厚块
+      v将 ......分成数份
+
+
+
+situation n 情况 形式 处境
+```
+
+
+## Image Storage
+```
+approximate  adj 接近的  大概的
+             v  近似 接近 粗略估计
+
+
+require v 需求 要求 命令
+
+requirement n  要求 必须品 必要条件
+
+lossless adj  无损的
+lossy adj 有损的
+
+discard v 抛弃 放弃
+discarded  adj 抛弃的 放弃的
+
+
+
 ```
