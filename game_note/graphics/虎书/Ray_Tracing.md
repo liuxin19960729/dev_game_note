@@ -345,4 +345,14 @@ vertical
 vertically adv 垂直地
 
 
+
+orthographic adj 直角的 正字法的
+behind 在...后面
+
+
+
+space n 空间 间隔 太空
+      v 留间隔 隔开
+spaced v 以一定的间隔进行排序
+   
 ```

@@ -760,4 +760,91 @@ discarded  adj 抛弃的 放弃的
 
 
 
+
+threshold n 门槛 阈值
+
+
+natural adj 自然的 物质的 天生的
+         n  自然的事物
+
+
+hold v 持有 保存
+
+
+management  n 管理  管理人员
+
+routine n 常规 惯例 计算机的一套执行的流程
+
+
+involve v 包含 牵涉 使陷于
+
+rely v 依赖 依靠
+
+dirty v 弄脏 变脏
+      adj  下流的 卑鄙的 
+
+quick-and-dirty adj  应急的
+
+
+dump  v 倾倒 丢下
+      n 垃圾场
+
+
+prepend v 预先考虑 
+
+appropriate adj 适当的 恰当的 
+             v 占用 拔出
+
+frequent  v 经常 平常
+           adj 频繁的  经常的
+frequently adv
+
+just adv 只 仅仅地 
+         adj 公平的 公正的
+
+
+idea n 想法 主意
+ideal  adj 理想的  完美的     n  理想典范
+ideally adv 理想地 观念的
+
+even 
+   adj  平坦的  平稳的 相等的 偶数的
+   adv 实际上 即使 甚至
+evenly   
+    adv 均匀地 平衡地 平坦地
+
+
+appose v 使....并列
+         使.....放于
+
+energy n 能力 活力 精神
+
+perception n 认识能力 感觉 知觉
+
+
+approximate  adj 近似的  大概的
+             v 接近 近似 粗略估计
+
+subjective adj 主观的
+
+sense v 感觉到 检测到
+      n 感官 观能 
+
+feature  n 特点 特征
+         v 以.....起作用
+
+     
+
+otherwise adj   另外的 在其他方面的
+          adv   否则 另外 在其他方面
+
+acquire v 取得 捕获
+acquired adj 后天的 已获得的
+         v(acquire的过去分词) 
+
+prefelable adj  更好的 更可取的   
+prefer v 喜欢 
+
+interleave v  插于...之间
+
 ```
