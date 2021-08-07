@@ -403,4 +403,118 @@ expression n 表现 表达 表情
 slight adj 轻微的 少量的 脆弱的 细长的
 
 
+intersection n 交叉  十字路口 交集  交叉点
+
+in practice 在实践中
+
+slight adj 稍微的 轻微的
+slightly adv 稍微地 轻微地
+
+problem n 难题  引起麻烦的人
+
+general adj 稍微的  普遍的
+
+useful 稍微的 有用的
+
+occur 发生 存在 出现
+
+
+case  n 情况 实例 
+      v 包围  把....装在箱里
+
+
+sphere  n 球体  球形包围盒
+        v 把....放在球体包围盒
+
+triangle n 三角行 三角行关系 
+
+```
+
+## Ray-sphere Intersection
+```
+implicit adj 含蓄的 暗示的 盲从的
+
+like to 喜欢 
+
+intersection n 交叉点
+intersec v 交叉 横截
+
+satisfy  v 令人满意 令人满足  满足 说服
+
+seek  v 寻找 寻求 探索
+
+
+radius n 半径
+
+satisfy v 令人满意 令人满足
+         蚂蚁 说服
+         复数 satisfies
+
+plug n 插头 塞子 栓
+     v 塞住  插入
+
+yield v 产出 放弃  让路
+      n 产量  利润 
+
+rearrange v 重新排列 重新整理
+
+except v  除....之外
+
+
+classic adj  经典的 古典的 传统的  
+        n 名著 经典著作 大艺术家
+
+quadratic n 二次方程
+
+discriminant n 判别式 辨别因数
+
+imaginary  adj 虚构的 想象的  虚数的
+
+
+positive adj 积极的  正的 阳性的 确定的 坑定的 绝对的 真识的
+          n  正数 正片
+
+graze v 放牧 吃草 擦伤
+      n 放牧 擦伤
+
+exact  adj 准确的 精密的 要求 强求
+         exactly  adv 恰好地 正是
+
+factor n 因素
+```
+
+## Ray-Triangle intersection
+```
+barycentric  adj 重心的
+
+vertix  n 定点 头顶 天顶
+      复数 vertices   vertexes
+
+numerical adj 数值的 数字的 数字表示的
+          numerically  adv    数字上 用数字表示
+
+
+analytical adj 分析的 解析的 善于分许的 
+analytically adv 分析地 解析地 
+
+
+plane n 平面 飞机
+
+for some 对于一些
+
+Otherwise  n  否则
+
+
+degenerate  v 使退化 恶化
+            adj 退化的  恶化的
+generate v 使形成 发生   
+
+generation n  一代 产生
+
+generator n 发电机 生产器
+
+
+contain v 包含 控制 含有 自制
+
+
 ```
