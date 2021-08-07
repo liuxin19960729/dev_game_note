@@ -516,5 +516,114 @@ generator n 发电机 生产器
 
 contain v 包含 控制 含有 自制
 
+denote  v 表示 指示
+   denoting  现在分词
+   denoted  过去分词 过去式
+
+
+determinant  n 行列式 决定因素
+             adj  决定性的
+
+subterm n子项
+
+exploit v 开发  开拓
+       exploits
+       exploiting
+       exploited
+exploiter n 开拓者 剥削者
+
+
+dummy  n 人体模型 防止品 
+       adj 假的  仿真的
+
+
+reuse v 在次使用  重复使用  
+      n  在次使用  重复使用  
+      reuses
+      reusding
+      reused 过去式  过去分词     
+```
+## Ray-Polygon Intersection
+```
+Polygone n 多边形
+
+give --过去分词 过去式 given
+ adj  赠予的  沉溺的 规定的
+ v 给予（give）
+give v给 产 给 让步 捐赠
+n  弹性 弯曲 延展性
+
+planar adj 二维的 平面的
+
+
+vertex n 至高 头顶
+vertices vertex的复数形式
+
+implisit adj 含蓄的 暗示的
+
+(p-p1)*n=0 n 为法线向量 垂直向量相乘法 为0 (cos 90=0)
+
+allow  v 允许 许可 认可  容许 考虑
+     allows 第三人称单数
+     allowing 
+     allowed  过去式 过去分词
+whether   是否 不论  两者中任意一个
+
+answer n 答案 回复 答复 回信
+       v 回答 答复 适合 解决
+     answers
+     answering
+     answered 过去式  过去分词
+
+send
+   v 发送 寄  派遣 派人 寄信
+   sends
+   sending 
+   sent or sended  过去式 过去分词
+
+
+
+boundary n 界线 边界  范围 
+
+count v 计算总数 数数
+      n 总数 数数 量的记数
+
+odd  adj 奇数的 古怪的  剩余的 临时的
+      n 奇数 怪人
+
+
+propagate v 传播 传送 繁衍 繁殖
+propagates
+propagating 
+propagated  过去 过去分词
+
+
+straightforward adj 直接的 了当的 坦率的 
+            adv  直接了当地 坦率地
+
+arise v 出现 上升 起立
+
+however  adv 无论如何  无论怎样
+among 在....中间  在.....之中
+
+whichever 任何一个
+
+accomplish v  完成  实现 达到
+
+accomplished adj 完成的 熟练的  有技巧的  有修养的 有学问的
+
+```
+
+## Intersecting a Group of Objects
+```
+consist v  由...组成 包含 符合
+consists
+consisting
+consisted
+
+camera along the ray 相机沿着射线
+
+think of 记起 想起 考虑 想象 关心
+
 
 ```
