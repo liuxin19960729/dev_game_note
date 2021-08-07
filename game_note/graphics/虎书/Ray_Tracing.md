@@ -345,4 +345,62 @@ vertical
 vertically adv 垂直地
 
 
+
+orthographic adj 直角的 正字法的
+behind 在...后面
+
+
+
+space n 空间 间隔 太空
+      v 留间隔 隔开
+spaced v 以一定的间隔进行排序
+   
+
+orthographic adj 直角的  正字法的
+
+
+already adv 找已 已经
+
+procedure n 程序  手续  步骤
+
+oblique n 倾斜无 v  倾斜  adj 斜的  不光明正大的
+
+
+separate adj 分开的 单独的
+         v  分开  单独
+
+
+exact  v 要求 需求 急需  勒索钱财  adj 准确的 精确的 精密的
+exactly adv 恰好地 正是 精确地
+
+substitute n 替代品 
+           v 替代  代替
+
+
+```
+
+
+## Perspective View
+```
+no longer 不再
+
+loose adj 宽松的 散漫的 不牢固的 
+      v 释放 变松 开火 放枪
+loosely adv 宽松地 放荡地 轻率地
+           
+focal length 焦点长度
+
+choose  v 选择 决定 挑选
+
+situation n 情况 形式 处境  位置
+
+illustrate v 图解 举例说明 
+
+specify  v 指定 详细说明 举例
+
+expression n 表现 表达 表情
+
+slight adj 轻微的 少量的 脆弱的 细长的
+
+
 ```
