@@ -713,3 +713,68 @@ The vector l is computed by substrcting the intersation point of the ray and sur
 
 
 ```
+
+## Blinn-Phone Shading
+```
+independent adj 孤独的 单独的 
+
+shininess  n 光照  光亮
+
+producing hightlights 产生高亮
+specular reflections  镜面反射
+
+
+appear to move around as the viewpoint  change.
+
+diffuse v 扩散  传播   漫射
+        adj 弥漫的 散开的
+
+wide  adj 广泛的  宽的的 
+widely  adv 广泛地
+
+propose v  建议 打算 计划 求婚
+
+
+bright  adj 明亮的 鲜明的 聪明的 
+brighter 更明亮的
+brightest 最明亮的
+
+
+mirror n 镜子 榜样 真是写照 
+       v 反射 反映
+
+smooth adj 顺滑的  光滑的  平稳的
+        v 使光滑 消除 缓和
+
+the relection then decreases smoothly as the 
+verctors move away from mirror configuration
+
+当反射平滑减小可能矢量从镜面结构移走
+
+
+
+bisector n  二等分线
+
+
+h:the bisector of angle between  v and l;
+
+if h near n(normal)
+     the specular component should be bright.
+
+
+
+
+bright -->dim 
+
+dim  adj 暗淡的 昏暗的 糊涂的 看不清的 
+     v 使暗淡 失去光泽  变模糊
+
+
+power n 能量 能力 电力  [数]幂
+
+exponent n [数]指数  典型  说明者  倡导者 用拥护者
+
+
+The power , or Phone  exponent , controls the apparent
+shininess of the surface
+```
