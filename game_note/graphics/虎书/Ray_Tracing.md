@@ -627,3 +627,89 @@ think of 记起 想起 考虑 想象 关心
 
 
 ```
+
+## Shading 
+```
+Shading n 底纹 遮蔽 明暗法  描影法
+
+Once the visiable surface for a pixel is know ,
+首先一个可见的平面，是能够让像素知道的
+
+
+evaluate v 评估 估价
+
+the pixel value  is computed by evaluating a shding model .
+这个像素值被计算光照模型计算。
+
+entire adj 全部的 整个的 全体的
+entirely adv  完全地 彻底地
+
+one way or another .无论怎样  以某种方式
+
+whereby adbv conj  凭借 通过 借以
+
+illuminate v 阐明 说明 照亮 
+
+The important varables in light reflection are  the light direction l, which is a unit vector
+pointing
+
+point n 点 标点 得分
+      v 指向 弄尖 加标点于 指明
+
+
+perpendicullar adj  垂直的 正交的 直立的 陡峭的
+               n 垂直线 垂线
+
+
+
+take place 发生 
+taking place 正在发生
+
+characteristic adj 典型的 特有的 
+               n 特征 特性 特色
+
+
+shininess n 发光 发亮
+
+```
+
+## Lambertian Shading 
+```
+observation n 观察 监视 观察报告 
+
+fall on 指向
+
+
+the amount of erergy from  a light source falls on an area of surface depend ons on the angle of the surface to the light.
+能量 重光源指向一个依赖于曲面角度的曲面区域到光
+
+
+coefficient n 系数 
+adj 合作的 共同作用的
+
+diffuse v 漫射 
+
+as 
+  adv 像......一样
+  prep 作为 像 
+
+separate  
+ adj  分开的 单独的  不同的
+ v 分离 分开 隔开  分手
+ 
+separately adv 分别地 分离地
+
+dot n 点 圆点 嫁妆 
+    vi  打上点 
+
+dot product 点积
+
+
+product n 产品 结果 乘积 作品
+
+
+The vector l is computed by substrcting the intersation point of the ray and surface from  the light source.
+
+
+
+```
