@@ -212,4 +212,125 @@ You didn’t even need to think about it
 
 翻译:你甚至想都不需要去想怎样去阻挡。
 
+
+
+原文
+Similarly, we espouse the application of formal process precisely because it lessens the
+need for management. Instead the emphasis is on honing everyone’s skills as part of a
+team, with the developers themselves taking responsibility through self-management.
+Thus, Part II details simple, common-sense procedures that are easy to adopt and will
+soon become second nature. The payoff will be seen in increased efficiency, reliability,
+and team morale.
+
+
+Similarly, we espouse the application of formal process precisely because it lessens the
+need for management.
+
+单词:
+similar adj 相似的
+similarly adv 类似地 差不多地 同样地
+espouse v 支出 嫁娶 赞成 信奉
+precise adj 精确的 明确的 严格的
+lessen v 使...减小 使...减轻  减少 减轻  变小
+翻译:类似地,我支持正式的处理精确应用，因为它会减少了管理需求。
+
+
+
+
+
+Instead the emphasis is on honing everyone’s skills as part of a
+team, with the developers themselves taking responsibility through self-management.
+
+单词:
+   emphasis n 重点 加强 加强语气
+   hone v 训练 磨(刀)
+        n 磨刀石
+   Instead n 替代 相反  
+   responsibility n 责任 职责 义务
+
+翻译:相反 重点是作为团队的一部分去磨练每个人的技能,开发者他们自己有责任进行的自我管理
+
+
+
+
+Thus, Part II details simple, common-sense procedures that are easy to adopt and will
+soon become second nature.
+
+单词:
+  common-sense 常识 有生活经验
+  procedure n 程序 手续 步骤
+  adopt v 接收 收养 采取
+翻译:因此，第二部分详的介绍简单常识程序的简单的采用并把它们作为第二天性。
+
+
+
+
+
+
+The payoff will be seen in increased efficiency, reliability,
+and team morale.
+
+
+单词:
+payoff n 报酬 结果 发工资 结算
+       adj 支付性的  决定性的 产生结果的
+efficientcy n 效率 效能 功效
+reliability n 可靠性
+morale n 士气 斗志
+
+翻译:报酬将被看成是效率 可靠性和士气的增长
+
+
+```
+
+
+## Game Architeture
+```
+原文
+The architectural plan of the project is the point of contact that draws together the
+conceptual, artistic or gameplay factors with the technical requirements. Envisage the
+design as an ideal view of what the game should be. The architecture maps out how to
+converge reality with that ideal view.
+
+
+
+The architectural plan of the project is the point of contact that draws together the
+conceptual, artistic or gameplay factors with the technical requirements
+
+单词:
+   conceptual adj 概念上的
+   art n 艺术 美术 技术 技巧
+   artist n 艺术家
+   artistic adj 艺术的 风雅的 有美感的
+   factor n 因素 
+
+翻译:架构项目的设计是点可点之间的概念一起进行连接,艺术和玩法因素和技术要求。
+
+
+
+
+
+Envisage the design as an ideal view of what the game should be.
+
+单词:
+  envisage n  设想 想象 正式
+  idea 
+  ideal adj 想象的 完美的 理想的
+      n 理想 典范
+  idea  想法 注意 概念
+翻译:想象这种设计作为一个理想的游戏应该是什么样子的
+
+
+
+
+
+The architecture maps out how to converge reality with that ideal view.
+
+
+单词:
+    map out 筹划 制定出
+    converge v 使聚集 聚集 靠拢 收敛
+    reality n 现实 真实  实际
+翻译:架构制定出怎样结合现实和理想的视图.
+
 ```
