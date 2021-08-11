@@ -778,3 +778,166 @@ exponent n [数]指数  典型  说明者  倡导者 用拥护者
 The power , or Phone  exponent , controls the apparent
 shininess of the surface
 ```
+
+## Blinn-Phone Shading
+```
+原文:
+We can tell how close we are to a mirror configuration by comparing the half vector h (the bisector of the angle between v and l) to the surface normal (Figure 4.16). If the half vector is near the surface normal, the specular component should be bright; if it is far away it should be dim. This result is achieved by computing the dot product between h and n (remember they are unit vectors, so n · h reaches its maximum of 1 when the vectors are equal), then taking the result to a power p > 1 to make it decrease faster. The power, or Phong exponent, controls the apparent shininess of the surface. The half vector itself is easy to compute: since v and l are the same length, their sum is a vector that bisects the angle between them, which only needs to be normalized to produce h.
+
+
+We can tell how close we are to a mirror configuration by comparing the half vector h (the bisector of the angle between v and l) to the surface normal (Figure 4.16). 
+
+单词:
+mirror n 镜子  真实写照 榜样
+       v 反射 反应
+tell  v 告诉 说 辨别  识别 泄密 告发
+翻译:我们通过比较半矢量h(v和l相加进行二分的矢量)和平面法向量，来辨别镜子的结构理我们有多近
+
+
+
+
+
+If the half vector is near the surface normal, the specular component should be bright;if it is far away it should be dim. 
+
+单词:
+
+翻译:若半向量接近法向量，反射会变亮。若远离法线会变得暗淡。
+
+
+
+
+This result is achieved by computing the dot product between h and n (remember they are unit vectors, so n · h reaches its maximum of 1 when the vectors are equal), then taking the result to a power p > 1 to make it decrease faster. 
+
+单词:
+   then adj 当时的
+        adv 当时 然而  那么 此外
+翻译:这个结果被实现通过计算h(harf vector)和n(normal vector) 的点乘(值为最大值1的时候 h 和 n 相等 brightest)。然而 取结果的幂 p (p>1) 使结果减的越快。
+
+
+
+The power, or Phong exponent, controls the apparent shininess of the surface.
+
+单词:
+   exponent n 指数  说明者 说明物 倡导者 鼓吹者
+   apparent adj 显然的  表面上的
+翻译:幂或者指数，控制表面上的平面光亮。
+
+
+
+The half vector itself is easy to compute: since v and l are the same length, their sum is a vector that bisects the angle between them, which only needs to be normalized to produce h.
+
+
+单词:
+   since conj 自....以来  因为
+          adv 自....以后  此后  之前
+          prep 自....以后 何曾
+翻译:半向量它自己使容易计算的:因为 v 和 l 使相同的长度,他们的和是他们二分角的一个向量，
+仅需要h被进行归一化
+
+
+原文
+
+Putting this all together, the Blinn-Phong shading model is as follows:
+h=v+l / ∥v + l∥
+L = kd I max(0, n · l) + ks I max(0, n · h)p,
+
+Putting this all together, the Blinn-Phong shading model is as follows:
+
+单词:
+   putt  v 轻击入洞
+         n 轻击
+   putting
+        putt 的现在分词      
+        v 放置 安置
+翻译:所有的放置在一起,Blinn-Phong的光照模型如下
+
+
+
+where ks is the specular coefficient, or the specular color, of the surface.
+
+
+单词:
+   coefficient n 系数 率 协同因数 
+               adj 合作的 共同作用的      
+翻译:上面kd 是平面的反射系数，或平面的反射颜色
+```
+
+## Ambient shading
+```
+单词:
+ambient adj  周围的 环境的 环绕的
+        n 周围环境 一种背景音乐
+
+
+原文:
+ 
+Surfaces that receive no illumination at all will be rendered as completely black, which is often not desirable. A crude but useful heuristic to avoid black shadows is to add a constant component to the shading model, one whose contribution to the pixel color depends only on the object hit, with no dependence on the surface geometry at all. This is known as ambient shading—it is as if surfaces were illuminated by “ambient” light that comes equally from everywhere. For convenience in tuning the parameters, ambient shading is usually expressed as the product of a surface color with an ambient light color, so that ambient shading can be tuned for surfaces individually or for all surfaces together. Together with the rest of the Blinn-Phong model, ambient shading completes the full version of a simple and useful shading model: 
+
+
+Surfaces that receive no illumination at all will be rendered as completely black, which is often not desirable. 
+
+单词:
+receive v 接受  接待 接纳 接收
+illunination n 照明  [光]照度 
+desirable adj 可取的 值得拥有的 令人向往的 性感的
+           n 称心如意的东西  合意的人 好的品质
+翻译: 所有平面面没有接收到光照明,都将会渲染成完全的黑色，这通常是不可取的。
+
+
+A crude but useful heuristic to avoid black shadows is to add a constant component to the shading model, one whose contribution to the pixel color depends only on the object hit, with no dependence on the surface geometry at all.
+
+单词:
+crude  adj 粗糙的 天然的 未加工的  粗鲁的
+        n 原油  天然的物质
+heuristic  adj  启发式的 探索的 
+           n 启发式教育 探索性步骤
+contribution n 贡献 捐献 投稿
+翻译:粗略的但是有用去避免黑色阴影的启发是添加一个常量组件给关照模型,关照的贡献的像素的颜色仅依赖被照射到的对象,所有都不依赖表面几何。
+
+
+
+This is known as ambient shading—it is as if surfaces were illuminated by “ambient” light that comes equally from everywhere.
+
+单词:
+   this is konw as  这就是所谓的
+
+翻译:这就是所谓的环境关照-如果平面通过环境光被光照从任何地方照过来
+
+
+
+For convenience in tuning the parameters, ambient shading is usually expressed as the product of a surface color with an ambient light color, so that ambient shading can be tuned for surfaces individually or for all surfaces together.
+
+单词:
+convenience adj  便利 厕所 便利的事物
+tuning n 调音 起音 音调
+express v 表达 快递 
+      adj 明确的迅速的 专门的
+      n 快车 快递 专柜
+individual adj 个别的 个体的 独特的
+           n 个人 个体
+
+翻译:为了方便调节参数,环境光照通常被表达作为环境光颜色和平面颜色的一和结果, 因此环境
+光照是为了这些平面的个体或者所有的平面一起一起被调节。
+
+
+
+Together with the rest of the Blinn-Phong model, ambient shading completes the full version of a simple and useful shading model:
+
+
+单词:
+   together with  和  连同
+   the rest of 其余的 剩下的 
+翻译:连同其余的的Blinn-Phong模型,环境光照结束所有的简单的和有用的的光照模型
+
+L=kaIa +kdImax(0,n·l)+ksImax(0,n·h)^n,
+
+
+where ka is the surface’s ambient coefficient, or “ambient color,” and Ia is the
+ambient light intensity.
+
+单词:
+
+翻译:ka 是 环境平面的系数 或 环境颜色 ，Ia 是 环境光的亮的层度
+```
+
+
