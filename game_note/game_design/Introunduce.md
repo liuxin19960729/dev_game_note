@@ -400,3 +400,29 @@ extensible and portable so that they can be plugged into other projects.
 翻译:这些模块英爱被设计成可扩展的 和 轻量化的因此他们可以被插入到其他的项目
 
 ```
+
+## Robustness
+```
+robustness n 稳健性 健壮性
+
+
+
+
+A high degree of reliability is best attained by building architecture free of module
+interdependencies. The final goal is a meta-architecture capable of building games
+that are always able to function in unexpected circumstances—in short, that are crash-
+proof. Though such a goal is considerably beyond the scope of this book, the subject
+is treated in an introductory manner by means of object-oriented design patterns.
+
+
+
+A high degree of reliability is best attained by building architecture free of module
+interdependencies. 
+
+单词:
+reliability n  可靠性
+attain  v 实现 达到 
+interdependcies n 相关性 相互依赖
+翻译:高等级的可靠性是最好通过构建架构来进行实现模块自由的依赖。
+
+```
