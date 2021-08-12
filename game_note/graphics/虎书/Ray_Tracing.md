@@ -940,4 +940,83 @@ ambient light intensity.
 翻译:ka 是 环境平面的系数 或 环境颜色 ，Ia 是 环境光的亮的层度
 ```
 
+## Multiple Point Lights
+```
+原文:
+A very useful property of light is superposition—the effect caused by more than one light source is simply the sum of the effects of the light sources individually. For this reason, our simple shading model can easily be extended to handle N light sources:
 
+
+
+
+A very useful property of light is superposition—the effect caused by more than one light source is simply the sum of the effects of the light sources individually. 
+
+单词:
+   property n 性质 财产 所有权
+   superposition n 叠加 重合
+   cause v 引起 使遭受
+        n 原因 事业 目标
+   more than  多余 超出 比.....多   
+   individual adj 个人的 个别的 独特的
+             n 个人 个体
+翻译:一个有用的光性质是重叠-这个效果被通过超出一个光源把他们个体光源效果进行简单的相加得到的
+superposition.
+
+
+
+For this reason, our simple shading model can easily be extended to handle N light sources:
+
+单词:
+extend v 延长 扩充
+extended adj 延长的 扩大的 长期的 广大的  
+翻译:对于这个原因，我们的简单光照模型可以简单的进行扩展去处理N个光照模型
+
+
+
+原文:
+where Ii, li, and hi are the intensity, direction, and half vector of the i^th light source.
+
+
+where Ii, li, and hi are the intensity, direction, and half vector of the i^th light source.
+
+单词:
+
+翻译:Ii Li and Hi 是 强度 方向 和 i个光源个眼睛之间的半矢量
+
+```
+
+## A Ray-Tracing Program
+```
+原文:
+We now know how to generate a viewing ray for a given pixel, how to find the closest intersection with an object, and how to shade the resulting intersection. These are all the parts required for a program that produces shaded images with hidden surfaces removed.
+
+
+We now know how to generate a viewing ray for a given pixel, how to find the closest intersection with an object, and how to shade the resulting intersection.
+
+单词:
+   result  v 结果 导致  产生
+           n 结果  成绩  答案 比赛结果
+   resulting  adj  因而发生的 作为结果的
+翻译:我们现在知道怎样给像素构建一个视图射线，怎样去寻找视图射线和对象最近的相交，怎样去遮挡作为结果的相交。
+
+
+ These are all the parts required for a program that produces shaded images with hidden surfaces removed.
+
+
+单词:
+require v 需要  要求 命令
+required adj 必须的
+produce v 生产 引起 创作  生育 繁殖
+        n 产品
+翻译:这所有的程序生产遮挡的图像和隐藏的平面这不分去掉。
+
+for each pixel do// 遍历每个像素
+  compute viewing ray//
+if (ray hits an object with t ∈ [0, ∞)) then//点是否在点上
+ Compute n
+  Evaluate shading model and set pixel to that color
+else
+set pixel color to background color
+
+单词
+    evaluate n 评估  估算
+```
