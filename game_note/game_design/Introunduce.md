@@ -333,4 +333,96 @@ The architecture maps out how to converge reality with that ideal view.
     reality n 现实 真实  实际
 翻译:架构制定出怎样结合现实和理想的视图.
 
+
+
+
+
+原文
+A perfect architecture should aim to achieve all of the following:
+
+单词:
+aim v 引导 把....对准 瞄准
+    n 目的 瞄准
+翻译:一个完美架构应该朝着目标去实现下面的所有。
+```
+## Modularity
+```
+modul n 模块 模件
+modularity n 模块性
+
+原文
+Separating the project into completely encapsulated modules allows each to be
+independently tested, modified, or replaced without impacting the rest of the system
+
+
+Separating the project into completely encapsulated modules allows each to be
+independently tested, modified, or replaced without impacting the rest of the system
+
+单词:
+separate adj 分开的 单独的 各不相同的 不受影响的
+         v 分离 分开 分手   
+separating adj 分离的 隔离的
+         v  saparate 现在分词
+encapsulate v 压缩 将....装入 将....封装进内部
+impact n 巨大影响 冲击 撞击
+       v 挤入 压紧 撞击 冲突 影响
+the rest of 其余的 剩下的        
+翻译:分离该项目到完全把他们封装成不同的模块允许，每个模块允许对立的被测试，修改 替换，不会影响其他的系统。
+
+```
+
+## Reusability
+```
+reusability n 可重用性
+
+原文:
+Reinventing the wheel every time makes no sense. Modules should be designed to be
+extensible and portable so that they can be plugged into other projects.
+
+
+Reinventing the wheel every time makes no sense
+
+单词:
+invent v 发明 创造 虚构
+reinvent v 重新使用  重新改造 重新发明 
+no sense 没没意义
+every time 每次 每当
+翻译:每次重新创造这轮子没有意义
+
+
+
+Modules should be designed to be
+extensible and portable so that they can be plugged into other projects.
+
+单词:
+    extensible adj 可延长的 可扩展的
+    portable  adj 轻便的 手提的 便携式的
+翻译:这些模块英爱被设计成可扩展的 和 轻量化的因此他们可以被插入到其他的项目
+
+```
+
+## Robustness
+```
+robustness n 稳健性 健壮性
+
+
+
+
+A high degree of reliability is best attained by building architecture free of module
+interdependencies. The final goal is a meta-architecture capable of building games
+that are always able to function in unexpected circumstances—in short, that are crash-
+proof. Though such a goal is considerably beyond the scope of this book, the subject
+is treated in an introductory manner by means of object-oriented design patterns.
+
+
+
+A high degree of reliability is best attained by building architecture free of module
+interdependencies. 
+
+单词:
+reliability n  可靠性
+attain  v 实现 达到 
+interdependcies n 相关性 相互依赖
+翻译:高等级的可靠性是最好通过构建架构来进行实现模块自由的依赖。
+
 ```
