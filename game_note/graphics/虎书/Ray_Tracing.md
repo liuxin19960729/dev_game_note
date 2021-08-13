@@ -1013,10 +1013,88 @@ for each pixel do// 遍历每个像素
   compute viewing ray//
 if (ray hits an object with t ∈ [0, ∞)) then//点是否在点上
  Compute n
-  Evaluate shading model and set pixel to that color
+  Evaluate shading model and set pixel to that color//用计算机计算光照模型
+  //和设置像素的颜色
 else
-set pixel color to background color
+set pixel color to background color// 设置像素的颜色背景颜色
 
 单词
-    evaluate n 评估  估算
+    evaluate n 评估  估算 用计算机计算
+
+
+原文：
+Here the statement “if ray hits an object . . . ” can be implemented using the algorithm of Section 4.4.4.
+
+单词:
+here adv 在这里 此时
+      n  这里
+statement n 声明 陈述 叙述 报表     
+翻译:这里的声明“若 射线 触碰到一个对象” 使用 Section 4.4.4的实现的算法
+
+
+
+
+原文:
+In an actual implementation, the surface intersection routine needs to some- how return either a reference to the object that is hit, or at least its normal vector and shading-relevant material properties. This is often done by passing a record/structure with such information. In an object-oriented implementation, it is a good idea to have a class called something like surface with derived classes triangle, sphere, group, etc. Anything that a ray can intersect would be under that class. The ray-tracing program would then have one reference to a “surface” for the whole model, and new types of objects and efficiency structures can be added transparently.
+
+
+In an actual implementation, the surface intersection routine needs to somehow return either a reference to the object that is hit, or at least its normal vector and shading-relevant material properties. 
+
+单词:
+actual adj 真实的 实际的 现行的 目前的
+routine n 例行程序 惯例 
+somehow adv 以某种方式  莫名其妙
+either pron  (两者中)   任意一个  每个  都不 
+least little最高级 最小的 最少的
+翻译:在实际的实现中，平面相交程序需要无论怎样都返回每个击打中的对象的引用,或至少低是他们的
+法向量和光照相关的材质配置。
+
+In an object-oriented implementation, it is a good idea to have a class called something like surface with derived classes triangle, sphere, group, etc.
+
+单词:
+   object-oriented adj 面向对象的
+翻译:在面向对象的实现里,这是一个好的想法 为了类调用像被驱动的多个三角形,球体个组等等的类平面的某物，
+
+
+
+Anything that a ray can intersect would be under that class.
+
+单词:
+anything  pron 任何东西 任何事物 重要东西
+          adv 根本 究竟(表否定)
+under adv 在下面 少于
+       prep 在 ....下面 在什么表面下          
+翻译:一个射线会相交任何在下面的任何类
+
+
+The ray-tracing program would then have one reference to a “surface” for the whole model, and new types of objects and efficiency structures can be added transparently.
+
+单词:
+then adj 当时的 
+     adv 当时  然后 那么 此外 总之
+whole adj 完整的 纯粹的
+      n 整体 全部 
+efficiency n 效率 效能 功效 
+
+transparent adj 透明的 显然的 易懂的
+transparently adv 显然地 易察觉地 明亮地
+翻译:射线追踪程序当有一个引用到全部的模型平面,和 新对象的类型和效能结构能够透明的被添加
+```
+
+## Object-Oriented  Design  for Ray-Tracing Program
+```
+原文:
+As mentioned earlier, the key class hierarchy in a ray tracer are the geometric objects that make up the model. These should be subclasses of some geometric object class, and they should support a hit function (Kirk & Arvo, 1988). To avoid confusion from use of the word “object,” surface is the class name often used. With such a class, you can create a ray tracer that has a general interface that assumes little about modeling primitives and debug it using only spheres. An important point is that anything that can be “hit” by a ray should be part of this class hierarchy, e.g., even a collection of surfaces should be considered a subclass of the surface class. This includes efficiency structures, such as bounding volume hierarchies; they can be hit by a ray, so they are in the class.
+
+
+As mentioned earlier, the key class hierarchy in a ray tracer are the geometric objects that make up the model.
+
+单词:
+mention  v 提及  谈到  说起
+         n 提及 说起
+hierarchy  n 层级  等级制度  
+geometric  n几何学 
+make up 组成 补足 化妆 
+翻译:如前面所说，在射线追踪器里关键的类层级是几何对象组成的模型。
+
 ```
