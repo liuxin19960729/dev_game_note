@@ -1233,3 +1233,85 @@ live v 居住 生存  生活
 讨论
 
 ```
+
+## Showdows
+```
+原文:
+Once you have a basic ray tracing program, shadows can be added very easily. Recall from Section 4.5 that light comes from some direction l. If we imagine ourselves at a point p on a surface being shaded, the point is in shadow if we “look” in direction l and see an object. If there are no objects, then the light is not blocked.
+
+
+Once you have a basic ray tracing program, shadows can be added very easily.
+单词:
+once adv  一次  曾经  
+     conj 一旦
+翻译:一旦你有一个基本的射线追踪的程序，阴影会被非常容易的添加。
+
+
+Recall from Section 4.5 that light comes from some direction l.
+翻译:回到第4.5小节光从一些方向来。
+
+
+If we imagine ourselves at a point p on a surface being shaded, the point is in shadow if we “look” in direction l and see an object.
+
+单词:
+
+翻译:若果我们想象我们自己在a平面上添加的一个点p,这个点在阴影里面，如果我们看对象的方向是l。
+
+
+
+If there are no objects, then the light is not blocked.
+单词:
+翻译:如果没有对象的时候这个光不会被阻挡。
+
+
+
+原文:
+This is shown in Figure 4.17, where the ray p + tl does not hit any objects and is thus not in shadow. The point q is in shadow because the ray q + tl does hit an object. The vector l is the same for both points because the light is “far” away. This assumption will later be relaxed. The rays that determine in or out of shadow are called shadow rays to distinguish them from viewing rays.
+
+
+This is shown in Figure 4.17, where the ray p + tl does not hit any objects and is thus not in shadow.
+
+单词:
+thus  adv 因此 从此 这样 如此
+翻译:图 4.17里面展示，射线 p+tl  没有触碰到任何对象因此没有在阴影里面。
+
+
+The point q is in shadow because the ray q + tl does hit an object.
+
+单词:
+翻译:点q 在阴影里面因为射线 q+tl 碰撞到了对象。
+
+
+The vector l is the same for both points because the light is “far” away.
+
+单词:
+翻译:对于所有点矢量 l 是 相同的 因为光能照射非常的远。
+
+
+
+This assumption will later be relaxed. The rays that determine in or out of shadow are called shadow rays to distinguish them from viewing rays.
+
+单词:
+assume v 假定 猜想
+assumeption n 假定 设想 
+relax  v 放松 休息 松懈 松弛 放宽
+later adv 延迟 稍后 后来
+distinguish v 区别 区分 辨别 使杰出
+翻译:猜想将被延迟放宽后.决定在阴影里或外面 的光线被叫做阴影射线 这样做事为了和视图射线进行
+区别
+
+
+
+原文:
+To get the algorithm for shading, we add an if statement to determine whether the point is in shadow. In a naive implementation, the shadow ray will check for t ∈ [0, ∞), but because of numerical imprecision, this can result in an inter- section with the surface on which p lies. Instead, the usual adjustment to avoid that problem is to test for t ∈ [ε, ∞) where ε is some small positive constant (Figure 4.18).
+
+
+
+To get the algorithm for shading, we add an if statement to determine whether the point is in shadow.
+
+单词:
+statement n 声明 陈述 叙述 报表
+whether conj 是否 不论  
+         pron  两个中的哪一个
+翻译:为了获得阴影的算法.我们添加一个是否点在阴影里的一个定义.
+```
