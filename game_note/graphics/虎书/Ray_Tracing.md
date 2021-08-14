@@ -1097,4 +1097,139 @@ geometric  n几何学
 make up 组成 补足 化妆 
 翻译:如前面所说，在射线追踪器里关键的类层级是几何对象组成的模型。
 
+
+These should be subclasses of some geometric object class, and they should support a hit function (Kirk & Arvo, 1988). 
+
+单词:
+
+翻译:这应该是几何对象的基类,并且他们应该支持击打函数。
+
+
+
+To avoid confusion from use of the word “object,” surface is the class name often used.
+
+单词:
+confusion n 混淆 混乱 困惑
+
+翻译:为了避免使用词“对象”混淆，平面是类名经常被使用。
+
+With such a class, you can create a ray tracer that has a general interface that assumes little about modeling primitives and debug it using only spheres.
+
+单词:
+assume  v 设想 承担 采取
+primitive adj  原始的 远古的 简单的  基础的
+翻译:这样的一个类,你可以创建一个通用接口的光线追踪器，假设很少关于通用接口的基础模型那可能就只能使用球体去调试
+
+
+An important point is that anything that can be “hit” by a ray should be part of this class hierarchy, e.g., even a collection of surfaces should be considered a subclass of the surface class.
+
+单词:
+hierarchy n 层级 等级制度
+consider v 考虑 认为 考虑到 细想
+翻译:任何一个重要的点都能够通过射线到类层级这部分被击打，甚至 一个平面集合会被认为平面
+类子类
+
+
+This includes efficiency structures, such as bounding volume hierarchies; they can be hit by a ray, so they are in the class.
+
+
+单词:
+efficiency n 效率 效能 功效
+hierarchy n 层级 
+bounding volume hierarchies  包围盒层次
+翻译:这包含效率结构,例如包围盒的层次；如果他们在这个类里面,他们会通过射线击打
+
+
+
+
+
+
+原文:
+
+For example, the “abstract” or “base” class would specify the hit function as well as a bounding box function that will prove useful later:
+
+
+For example, the “abstract” or “base” class would specify the hit function as well as a bounding box function that will prove useful later:
+
+单词:
+as well as  和....一样  不但.....而且
+prove  v 证明 检验 显示 
+翻译:例如,抽象或基础对象指定不但指定hit 函数而且还指定将要指定后面使用的验证包围盒的函数
+
+
+
+
+原文:
+Here (t0,t1) is the interval on the ray where hits will be returned, and rec is a record that is passed by reference; it contains data such as the t at the intersection when hit returns true. The type box is a 3D “bounding box,” that is two points that define an axis-aligned box that encloses the surface. For example, for a sphere, the function would be implemented by
+
+
+Here (t0,t1) is the interval on the ray where hits will be returned, and rec is a record that is passed by reference; it contains data such as the t at the intersection when hit returns true.
+
+单词:
+interval n 间隔 间隙
+
+翻译:Here(t0,t1)是在射线的上发射点到击中之间位置的间隔,rec 是一个已经用过的引用记录,
+它包含的数据 例如 t 在 与平面对象相交击打的是返回的值
+
+
+The type box is a 3D “bounding box,” that is two points that define an axis-aligned box that encloses the surface. 
+
+单词:
+enclose v  围绕  装入
+axis-aligned 坐标轴对其的盒子
+
+翻译:这个类型的盒子是一个3D的包围盒,
+定义两点的坐标轴对齐的盒子包围这个平面
+
+
+
+原文:
+ 
+The point p is not in shadow, while the point
+q is in shadow.
+Another class that is useful is material. This allows you to abstract the material behavior and later add materials transparently. A simple way to link objects and materials is to add a pointer to a material in the surface class, although more programmable behavior might be desirable. A big question is what to do with textures; are they part of the material class or do they live outside of the material class? This will be discussed more in Chapter 11.
+
+
+
+The point p is not in shadow, while the point
+q is in shadow.
+
+单词:
+
+翻译:这p点没有在阴影中,与此同时q点在阴影中
+
+
+Another class that is useful is material. 
+
+翻译:另一个类有用的类是材质类
+
+
+
+This allows you to abstract the material behavior and later add materials transparently.
+
+单词:
+transparent adj 透明的 显然的 坦率的 易懂的
+transparently adv 显然地 易察觉地
+翻译:这允许你去抽象材质的行为和后面去添加透明的材质
+
+
+
+
+A simple way to link objects and materials is to add a pointer to a material in the surface class, although more programmable behavior might be desirable.
+
+单词:
+翻译:一个简单的方法是连接对象个材质,在平面类里面这个方法是添加一个点到材质上。通过
+更多可编程的行为使他描述和显示出来
+
+
+
+A big question is what to do with textures; are they part of the material class or do they live outside of the material class? This will be discussed more in Chapter 11.
+
+单词:
+do with 利用 处理 需要
+live v 居住 生存  生活
+     adj 活的 实况转播的 现场表演的
+翻译:一个大问题是如何处理纹理;他们部分材质类或他们生活之外的材质类？这个将在第11章有更多的
+讨论
+
 ```
