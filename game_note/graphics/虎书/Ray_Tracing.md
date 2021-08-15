@@ -1314,4 +1314,26 @@ statement n 声明 陈述 叙述 报表
 whether conj 是否 不论  
          pron  两个中的哪一个
 翻译:为了获得阴影的算法.我们添加一个是否点在阴影里的一个定义.
+
+
+
+ In a naive implementation, the shadow ray will check for t ∈ [0, ∞), but because of numerical imprecision, this can result in an intersection with the surface on which p lies.
+
+
+单词:
+native adj 天真的  幼稚的
+imprecision n 不精确的 不严密的
+翻译:在一个简单的实现中,阴影射线将检查t [0,∞),但是由于数字不够精确,这会导致p线和平面相交的结果。
+
+
+
+Instead, the usual adjustment to avoid that problem is to test for t ∈ [ε, ∞) where ε is some small positive constant (Figure 4.18).
+
+单词:
+instead adv 代替 反而 相反
+usual adj 通常的 惯例的 平常的
+adjustment n 调整 调节 调节器 
+adjust v 调整 使.....适合 校准
+翻译:相反,通常调整去避免去测试原因为ε使一些小的常这个问题。
+
 ```
