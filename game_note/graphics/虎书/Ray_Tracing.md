@@ -1336,4 +1336,194 @@ adjustment n 调整 调节 调节器
 adjust v 调整 使.....适合 校准
 翻译:相反,通常调整去避免去测试原因为ε使一些小的常这个问题。
 
+
+
+原文:
+Note that the ambient color is added whether p is in shadow or not. If there are multiple light sources, we can send a shadow ray before evaluating the shading model for each light. The code above assumes that d and l are not necessarily unit vectors. This is crucial for d, in particular, if we wish to cleanly add instancing later (see Section 13.2).
+
+
+Note that the ambient color is added whether p is in shadow or not. 
+
+单词:
+ambient adj 周围的 外界的 环绕的
+         n  周围环境 一种背景音乐
+翻译:无论p是否周四阴影里，环境颜色都要添加
+
+
+
+If there are multiple light sources, we can send a shadow ray before evaluating the shading model for each light.
+
+单词:
+evaluate v 评价 评估 
+翻译:若有多个光源，我们能够在进行评估每个光的光照模型之前发射一个阴影射线
+
+
+
+The code above assumes that d and l are not necessarily unit vectors.
+
+单词:
+
+翻译:代码的下面假设 d 和 l 不是不许单位向量
+
+
+
+This is crucial for d, in particular, if we wish to cleanly add instancing later (see Section 13.2)
+
+单词:
+crucial adj 重要的 决定性的 定局的 决断的
+particular adj 特别的 详细的 特有的 挑剔的
+in particular 尤其 特别
+翻译:对于d是至关重要的，尤其，若我们希望稍后去干净的添加实例化。
+```
+
+## Ideal Specular Reflection
+```
+ideal adj 理想的 完美的 想象的 不切实际的
+
+原文:
+It is straightforward to add ideal specular reflection, or mirror reflection, to a ray- tracing program. The key observation is shown in Figure 4.19 where a viewer looking from direction e sees what is in direction r as seen from the surface. The vector r is found using a variant of the Phong lighting reflection Equation (10.6). There are sign changes because the vector d points toward the surface in this case, so,
+
+
+
+It is straightforward to add ideal specular reflection, or mirror reflection, to a ray- tracing program.
+
+单词:
+straightforward adj  简单的 坦率的  明确的 径直的
+                adv 直截了当地 坦率地
+be starightforard to xxx   xxx很简单                
+翻译:添加理想的镜面反射很简单，为一个射线-追踪程序。
+
+
+
+The key observation is shown in Figure 4.19 where a viewer looking from direction e sees what is in direction r as seen from the surface.
+
+单词:
+observe v 庆祝 观察 遵守 注意到 评论
+observation n 观察 监视 观察报告
+翻译:关键的观察这展示在图4.19的地方观察者观看的方向可以从平面看到r方向上的东西。
+
+
+
+
+The vector r is found using a variant of the Phong lighting reflection Equation (10.6).
+
+单词:
+
+翻译:向量r 是建立一个使用在phone光反射等式的可变参数.
+
+
+
+
+
+There are sign changes because the vector d points toward the surface in this case, so,
+单词:
+
+翻译:有符号的改变因为在这个方案里面向量d的一些点趋向于平面。
+
+
+r = d−2(d·n)n
+
+根据下图解释这上面的formula.
+
+
+
+计算 s在 -d在 n上的投影
+
+设 s为d到n 上的投影
+
+|s|=|d|*cos(ta);
+cos(ta)=-d·n/(|d|*|n|);
+|s|=-d·n/(|d|*|n|)*|d|=-d·n/|n|;
+n1=n/|n|;
+s=n1*|s|=n/|n|*-d·n/|n|=-(d·n)n/|n|*|n|;
+由于n是归一化向量简化s=-(d·n)n
+r=d-2(d·n)n
+
+
+原文:
+In the real world, some energy is lost when the light reflects from the surface, and this loss can be different for different colors. For example, gold reflects yellow more efficiently than blue, so it shifts the colors of the objects it reflects. This can be implemented by adding a recursive call in raycolor:
+
+
+In the real world, some energy is lost when the light reflects from the surface, and this loss can be different for different colors.
+
+单词:
+energy n 能力 精力 活力 能量
+
+翻译:在现实世界中,光从平面反射有些能量会丢失。不同的颜色损失是不同的
+
+
+
+For example, gold reflects yellow more efficiently than blue, so it shifts the colors of the objects it reflects. 
+
+
+单词:
+efficient adj 有效率的 有能力的 生效的
+翻译:例如，黄金反射黄色的效率高于蓝色，因此会转移对象反射的颜色。
+
+
+
+This can be implemented by adding a recursive call in raycolor:
+单词:
+recursive adj 递归的 循环的
+
+color c = c + kmraycolor(p + sr, ε, ∞)
+
+
+
+原文:
+where km (for “mirror reflection”) is the specular RGB color. We need to make sure we test for s ∈ [ε, ∞) for the same reason as we did with shadow rays; we don’t want the reflection ray to hit the object that generates it.
+
+where km (for “mirror reflection”) is the specular RGB color.
+单词:
+翻译:km(镜面反射) is 镜面反射的RGB颜色。
+
+
+
+We need to make sure we test for s ∈ [ε, ∞) for the same reason as we did with shadow rays; we don’t want the reflection ray to hit the object that generates it.
+
+单词:
+make sure 确保
+
+翻译:我们需要确保我们检测∈ [ε, ∞)像我们检测阴影射线一样;我们不想反射射线去触碰生成发射射线的这个对象
+
+
+
+原文:
+The problem with the recursive call above is that it may never terminate. For example, if a ray starts inside a room, it will bounce forever. This can be fixed by adding a maximum recursion depth. The code will be more efficient if a reflection ray is generated only if km is not zero (black).
+
+
+The problem with the recursive call above is that it may never terminate. 
+单词:
+
+翻译:递归执行上面问题可能永远不会结束.
+
+
+
+For example, if a ray starts inside a room, it will bounce forever.
+翻译:例如,如果一个射线在房子里面开始，那么这个射线将永远不会停止。
+
+
+
+This can be fixed by adding a maximum recursion depth. 
+
+单词:
+
+翻译:我们可以添加一个最大的递归深度来进行固定。
+
+
+The code will be more efficient if a reflection ray is generated only if km is not zero (black).
+
+单词:
+
+翻译:如果代码进行反射的仅仅是km不为0(不为黑色)这样代码执行将更加高效。
+
+
+
+```
+![viwer  ](img/QQ20210818-091056@2x.png)
+
+
+## Historical Notes
+```
+
 ```
