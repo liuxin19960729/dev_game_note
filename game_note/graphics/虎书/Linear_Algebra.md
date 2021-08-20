@@ -193,4 +193,49 @@ note v 注意 记录 注解
 |(ka)b| = |a(kb)| = k|ab|
 
 
+原文:
+Also, we note that “shearing” a parallelogram does not change its area (Fig-
+(5.1)
+
+|(a + kb)b| = |a(b + ka)| = |ab|.
+
+Also, we note that “shearing” a parallelogram does not change its area (Fig-
+(5.1)
+单词:
+shear v  剪毛 断裂
+翻译:我们注意到剪切平行边形面积不改变。
+
+|(a + kb)b| = |a(b + ka)| = |ab|
+
+
+原文:
+because as shown in Figure 5.5 we can “slide” the edge between the two parallelograms over to form a single parallelogram without changing the area of either of the two original parallelograms.
+
+单词:
+slide v 滑动 贬值  悄悄移动
+翻译:因为在图5.5.里面展示我们会滑动边从两个平行四边形到一个平行四边形没有改变两个原来平行四边形面积。
+
+
+
+原文:
+This simplification uses the fact that |vv| = 0 for any vector v, because the parallelograms would all be collinear with v and thus without area.
+
+This simplification uses the fact that |vv| = 0 for any vector v, because the parallelograms would all be collinear with v and thus without area.
+单词:
+simplification n 简单化
+collinear adj 共线的 同线的  
+翻译简:单化使用对于 任意向量 v  |vv|=0 的这个事实，因为平行四边所有的共线向量 v 是没有面积的。
+
+
+
+原文:
+As you can see, the computation of determinants in this fashion gets uglier as the dimension increases. We will discuss less error-prone ways to compute determinants in Section 5.3.
+
+单词:
+as you can see  正如你所看
+fashion n 时装 方式 样式
+        v 使用 改变 做成....的形状
+erro-prone 易于出错      
+翻译:正如你所看，随着维数的增加计算行列式的放式变难。我们将讨论行列式减少出错的的方式。
+
 ```
