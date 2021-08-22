@@ -238,4 +238,251 @@ fashion n 时装 方式 样式
 erro-prone 易于出错      
 翻译:正如你所看，随着维数的增加计算行列式的放式变难。我们将讨论行列式减少出错的的方式。
 
+
+
+
+原文:
+Example. Determinants arise naturally when computing the expression for one vector as a linear combination of two others—for example, if we wish to express a vector c as a combination of vectors a and b:
+
+
+Example. Determinants arise naturally when computing the expression for one vector as a linear combination of two others for example, if we wish to express a vector c as a combination of vectors a and b:
+
+单词:
+
+翻译:例.行列式的出现为了计算两个向量的作为一个线性合并的式子，例如:若我希望去解释 向量c 我们可以把向量c 作为  a和b的合并:
+
+c = (ac)a + (bc)b.
+
+
+原文:
+Figure 5.6. On the left, the vector c can be represented using two basis vectors as aca + bcb. On the right, we see that the parallelogram formed by a and c is a sheared version of the parallelogram formed by bcb and a.
+
+
+单词:
+
+form n形式 形状 形态
+     v  构成 组成  排列 组织 
+formed adj 形成的
+       form 的过啊去分词 和 过去式部分 
+翻译:图5.6,在左边,向量c 使用两个基础的向量 (ac)a + (bc)b. 进行表示。
+在右边,我们看平行四边形通过 a 和 c 修剪 的平行四边形通过bcb 和a 构建的版本构建
+
+ we see that the parallelogram formed by a and c is a sheared version of the parallelogram formed by bcb and a  --(宾语从句)
+
+
+```
+
+## Matrices
+```
+原文:
+A matrix is an array of numeric elements that follow certain arithmetic rules. An example of a matrix with two rows and three columns is
+
+A matrix is an array of numeric elements that follow certain arithmetic rules. (that .... 定语从句)
+
+单词:
+certain adj 某一 必然的 却行的 无疑的 有把握的
+        pton 某些 某几个
+arithmetic n 数子算数 算法       
+翻译: 矩阵是 数字下面某些规则的元素数组 
+谓语 is  be动词  主系表结构
+
+An example of a matrix with two rows and three columns is
+翻译:一个矩阵有两行三列的案列:
+
+
+
+原文:
+Matrices are frequently used in computer graphics for a variety of purposes in- cluding representation of spatial transforms. For our discussion, we assume the elements of a matrix are all real numbers. This chapter describes both the mechan-ics of matrix arithmetic and the determinant of “square” matrices, i.e., matrices with the same number of rows as columns.
+
+
+Matrices are frequently used in computer graphics for a variety of purposes including representation of spatial transforms.
+
+单词:
+frequent adj 频繁的  时常发生的 惯常的
+         v 常到  常去
+frequently adv 频繁地  经常地
+
+representation n 代表 表示   
+
+spatial adj 空间的 存在于空间的
+翻译:
+are be动词  谓语
+主语:Matrices 
+在计算机图像学里矩阵是在经常地被使用因为目的变量包含空间变换的表示。
+
+
+
+For our discussion, we assume the elements of a matrix are all real numbers.
+
+单词:
+翻译:对于我们讨论,我们假设矩阵里面都是实数元素
+
+谓语 assume 
+
+
+This chapter describes both the mechanics of matrix arithmetic and the determinant of “square” matrices, i.e., matrices with the same number of rows as columns.
+
+单词:
+mechanics n 力学 结构 技术 机械学
+翻译:这章描述所有 矩阵数字和 平方 矩阵的 行列式结构 矩阵 有相同的行数和列数。
+谓语:describe 
+```
+
+### Matrix Arithmetic
+```
+原文:
+A matrix times a constant results in a matrix where each element has been multiplied by that constant, e.g.,
+
+A matrix times a constant results in a matrix where each element has been multi-plied by that constant, e.g.,
+
+单词:
+times v 乘以
+翻译: 一个矩阵乘以常数结果在矩阵里每个元素被乘上这个常量。
+  
+ 谓语:times 乘以
+
+例  2* [1,2      =[2,4]
+        3,4]       6,8]
+
+
+Matrices also add element by element, e.g.,
+
+单词:
+also adv 也 而且 同样 
+     conj 并且 另外
+翻译: 矩阵 (also adv)也通过元素和元素相加。
+
+谓语:add 加法 相加  
+
+
+
+For matrix multiplication, we “multiply” rows of the first matrix with columns of the second matrix:
+
+
+单词:
+翻译:对于矩阵的乘法,第一个矩阵的列和第二个矩阵的行相乘。
+
+谓语 multiply
+
+
+Taking a product of two matrices is only possible if the number of columns of the
+left matrix is the same as the number of rows of the right matrix. For example,
+
+单词:
+
+翻译:两个矩阵的乘积是的要求是左边矩阵列数行数和右面举证的行数相等。
+
+谓语:is 
+
+
+Matrix multiplication is not commutative in most instances:
+
+单词:
+commutative adj 交换的 替换的
+in most instances 大多数情况下
+翻译:在大多数情况下矩阵乘法是不能交换的.(不满足乘法交换律)
+
+
+
+
+Also, if AB = AC, it does not necessarily follow that B = C. Fortunately, matrix multiplication is associative and distributive:
+
+单词:
+necessary  adj 必要的 必须的 
+           n 必须品
+follow  v 跟随 遵循  追求
+        n  跟随 追随 
+
+fortunate adj 幸运的 侥幸的 吉祥的
+fortunately adv 幸运地
+
+associative adj 联合的 组合的 联系的
+distribuative adj 分布的 分发分  分配的
+翻译:然而,如果AB=BC ,B=C 不是必然的。幸运地，举证的乘法满足接合律和分配率。
+
+it does not necessarily follow that B = C.(主语从句)
+
+```
+
+### Operations Martices 
+```
+原文:
+We would like a matrix analog of the inverse of a real number. We know the inverse of a real number x is 1/x and that the product of x and its inverse is 1. We need a matrix I that we can think of as a “matrix one.” This exists only for square matrices and is known as the identity matrix; it consists of ones down the diagonal and zeroes elsewhere. For example, the four by four identity matrix is
+
+
+We would like a matrix analog of the inverse of a real number.
+单词:
+analog  adj 模拟的  有长短针的
+        n  模拟 类似物
+inverse adj 相反的 倒转的         
+翻译:我们希望有一个矩阵实数翻转的模拟器。
+谓语: like 
+
+
+We know the inverse of a real number x is 1/x and that the product of x and its inverse is 1.
+
+单词:
+know 知道 认识 懂得
+翻译:我们知道实数x相反数是 1/x 并且 x 和相反数相乘的结果是1. 
+
+谓语: know  
+
+
+
+We need a matrix I that we can think of as a “matrix one".
+
+单词:
+翻译:我需要一个矩阵我们是能够认为一个能够 作为单位举证的矩阵I
+
+谓语: need
+
+
+The inverse matrix A−1 of a matrix A is the matrix that ensures AA−1 = I. For example,
+
+单词:
+
+翻译:逆矩阵 矩阵A是确保 AA−1 = I A^-1 的矩阵。
+
+
+
+
+原文:
+Note that the inverse of A−1 is A. So AA−1 = A−1A = I. The inverse of a product of two matrices is the product of the inverses, but with the order reversed:
+
+
+
+Note that the inverse of A−1 is A. So AA−1 = A−1A = I.
+单词:
+
+翻译:注意 A−1的逆是A所有So AA−1 = A−1A = I.。
+
+
+The inverse of a product of two matrices is the product of the inverses, but with the order reversed:
+
+单词:
+the order reserved 排序颠倒.
+翻译:两个矩阵乘积的逆是两个矩阵逆的乘积,但是顺序颠倒了。
+
+(AB)^-1=B^-1B^-1
+
+
+
+We will return to the question of computing inverses later in the chapter.
+
+单词:
+翻译: 在本章的后面我们返回到计算矩阵逆的这个问题。
+
+谓语:return v 返回
+
+
+The transpose AT of a matrix A has the same numbers but the rows are
+switched with the columns. If we label the entries of AT as a′ij then
+
+单词:
+transpose v  调转 转移 移项
+          n 转置阵
+entry n 进入 入口 条目          
+翻译: 转置阵 AT和A举证有相同数量的举证但是列 和行进行了调换。若我们 标签 ij 作为条目时。
+
+
 ```
