@@ -485,4 +485,148 @@ entry n 进入 入口 条目
 翻译: 转置阵 AT和A举证有相同数量的举证但是列 和行进行了调换。若我们 标签 ij 作为条目时。
 
 
+
+The transpose of a product of two matrices obeys a rule similar to Equation (5.4):
+单词:
+obey v 服从 听从 顺从 听话
+翻译:两个矩阵相乘的转置遵守和等式相同的规则
+(AB)T = BTAT.
+谓语: obey 
+
+
+
+原文:
+
+The determinant of a square matrix is simply the determinant of the columns of the matrix, considered as a set of vectors. The determinant has several nice relationships to the matrix operations just discussed, which we list here for reference:
+
+The determinant of a square matrix is simply the determinant of the columns of the matrix, considered as a set of vectors.
+
+单词:
+square adj 平方的 正方形的  直角的 正直的
+       v 成方形  使成方形 于...一致
+       n  平方 广场 正方形
+翻译:方阵行列式矩阵是简单地行列行列式,被认为是向量的集合。
+
+谓语:is 
+
+The determinant has several nice relationships to the matrix operations just discussed, which we list here for reference:
+
+单词:
+several adj 几个的 各自的
+翻译:方阵行列数有几个和举证非常好的联系为了矩阵的操作被讨论,我们这里列举了所涉及的。
+
+
+|AB| = |A| |B| 
+谓语:has 
+```
+
+### Vectors Operations in Matrix From 
+```
+原文:
+In graphics, we use a square matrix to transform a vector represented as a matrix. For example, if you have a 2D vector a = (xa,ya) and want to rotate it by 90 degrees about the origin to form vector a′ = (−ya, xa), you can use a product of a 2 × 2 matrix and a 2 × 1 matrix, called a column vector. The operation in matrix form is
+
+
+In graphics, we use a square matrix to transform a vector represented as a matrix.
+
+单词:
+翻译:在图像学中,我们使用方形矩阵为了去移动这个用矩阵表示的向量。
+
+谓语: use 
+
+
+
+
+For example, if you have a 2D vector a = (xa,ya) and want to rotate it by 90 degrees about the origin to form vector a′ = (−ya, xa), you can use a product of a 2 × 2 matrix and a 2 × 1 matrix, called a column vector.
+
+单词:
+
+翻译:例如,若你有一个2d向量a = (xa,ya) 并且 你想去围绕原点旋转这个向量90度到向量
+a′ = (−ya, xa),你可以使用 2x2矩阵 和 2x1的被称为列矩阵矩阵相乘，
+
+
+
+
+We can get the same result by using the transpose of this matrix and multiplying
+on the left (“premultiplying”) with a row vector:
+
+单词:
+
+翻译:听过使用矩阵的逆乘以左边的行矩阵我们可以获得相同的结果
+
+(AB)T=BT AT
+
+
+
+原文:
+These days, postmultiplication using column vectors is fairly standard, but in many older books and systems you will run across row vectors and premultiplication. The only difference is that the transform matrix must be replaced with its transpose.
+
+
+These days, postmultiplication using column vectors is fairly standard, but in many older books and systems you will run across row vectors and premultiplication. 
+
+单词:
+postmultiplication n 自右相乘
+These days  这些天 目前 
+fair  adj 公平 公正 美丽的 晴朗的
+fairly adv 相当地 公平地 简直
+
+翻译:目前，自右乘使用的列向量是公认为的标准,但是在一些老师和老系统里面你将绕过行 向量和自右乘。
+
+谓语  is   
+
+
+
+
+The only difference is that the transform matrix must be replaced with its transpose.(宾语从句)
+
+单词:
+翻译:这些差距是移动动作的矩阵一定会被替换成逆矩阵。
+
+谓语: is 
+
+
+原文:
+We also can use matrix formalism to encode operations on just vectors. If we consider the result of the dot product as a 1 × 1 matrix, it can be written
+
+
+We also can use matrix formalism to encode operations on just vectors. 
+单词:
+formalism n 形式主义 形式体系
+翻译:在只有向量的情况下我也会使用 矩阵的形式体系为了去 编码操作.
+
+谓语 use 
+
+
+If we consider the result of the dot product as a 1 × 1 matrix, it can be written
+
+单词:
+翻译:如果我考虑1x1 举证的点乘结果,它会被写成 a · b = aTb
+谓语: consider 
+
+
+
+
+原文:
+A related vector product is the outer product between two vectors, which can be expressed as a matrix multiplication with a column vector on the left and a row vector on the right: abT. The result is a matrix consisting of products of all pairs
+of an entry of a with an entry of b. For 3D vectors, we have
+
+
+A related vector product is the outer product between two vectors, which can be expressed as a matrix multiplication with a column vector on the left and a row vector on the right: abT.
+
+单词:
+ralate  v 叙述 涉及 使.....有联系  认同 符合
+ralated adj 叙述的 讲述的 有关系 有联系的
+outer adj 外面的 外部的 远离中心的
+翻译:一个相关联的向量乘积是 远离乘积之间的两个向量, 两个向量乐意被理解为 矩阵的乘积 左边是
+横矩阵和右边的列举证:abT.
+
+
+
+
+he result is a matrix consisting of products of all pairs of an entry of a with an entry of b. For 3D vectors, we have
+
+单词:
+consist v  由....组成 在于 符合
+翻译: 他结果是一个矩阵  a条目  和 b条目 的所有副 相乘组成的  
+
+谓语 is 
 ```
