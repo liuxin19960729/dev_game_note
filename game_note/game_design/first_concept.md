@@ -109,4 +109,65 @@ sample n 样品 样本
 
 ## The Shock of the New 
 ```
+true adj 真实的 正确的 
+     adv 真实地  正确地
+     n 真实 准确
+truly adv 真实地 不假 真诚地 
+
+statement n 申诉 陈诉 叙述 清单  报表
+
+bother v 烦扰 打扰 麻烦
+       n 麻烦 烦恼 
+ Why bother to try to create anything if it isn’t going to be original? 
+ 如果创造的东西不是原创 为什么要麻烦去尝试创造任何东西
+why ......if.....
+如果......为什么..... 
+
+occasional adj 偶然的 临时的
+
+opportunity n 机会 时机
+
+rife adj 普遍的 流行的 盛传的
+
+advent n 到来 出现 基督降临
+
+recreation n 娱乐 消遣 修养
+
+obsession n 痴迷 困扰
+
+occupy v 占领 占据 居住
+
+
+Artists of every generation have drawn on the ideas and works that have come before
+them. 
+
+Artists of every generation每一带艺术家
+ideas and works that have come before them.(定语从句)  
+他们之前的思想和想法，
+
+翻译:每一代艺术家画上他们之前就有的作品和想法。
+
+
+Your own creativity is a result of the sources that you borrow from (定语从句)
+你自己的创造力是你借鉴其他源创造力的结果。
+
+
+the unique mix of ideas that synthesize in your own work.
+
+ideas that synthesize in your own work   // synthesize  v 合成综合
+在你自己作品合成想法
+
+翻译:唯一在你自己的作品里面合成混合的想法。
+
+encourage v 鼓励 支持 怂恿 激励
+encouraging adj 令人受鼓舞的 奖励的
+
+else adj 别的 其他的 另外的
+     adv 其他 否则 另外
+
+recreation n娱乐 消遣
+creation n 创在力
+creative adj 有创造性的
+
+
 ```
