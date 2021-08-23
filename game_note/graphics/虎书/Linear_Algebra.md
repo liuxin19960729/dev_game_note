@@ -9,7 +9,7 @@ Perhaps the most universal tools of graphics programs are the matrices that chan
 单词:
 perhaps adv  或许 也许
 universal adj 普遍的 通常的 
-翻译:互殴图形程序最普遍的工具是矩阵，用于变换和移动点和向量
+翻译:或许图形程序最普遍的工具是矩阵，用于变换和移动点和向量
 
 
 
@@ -42,7 +42,9 @@ In this chapter, we review basic linear algebra from a geometric perspective, fo
 intuition n 直觉 直觉力   
 focus on 集中于 专注于
 algorithms
-翻译:在这一节,我们重新从几何学方面看基础的线性代数,在二维和三维坐标系中专注于直觉和算法会使用的非常好。
+perspective n 观点 远景 透视图
+            adj 透视的    
+翻译:在这一节,我们重新从几何学方面看基础的线性代数,集中于  在二维和三维中工作器来非常好的方式是算法和直觉。
 
 
 
