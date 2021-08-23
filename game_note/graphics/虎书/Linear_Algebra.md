@@ -631,4 +631,65 @@ consist v  由....组成 在于 符合
 翻译: 他结果是一个矩阵  a条目  和 b条目 的所有副 相乘组成的  
 
 谓语 is 
+
+
+
+原文:
+It is often useful to think of matrix multiplication in terms of vector operations. To illustrate using the three-dimensional case, we can think of a 3 × 3 matrix as a collection of three 3D vectors in two ways: either it is made up of three column vectors side-by-side, or it is made up of three row vectors stacked up. For instance, the result of a matrix-vector multiplication y = Ax can be interpreted as a vector whose entries are the dot products of x with the rows of A. Naming these row vectors ri, we have
+
+
+It is often useful to think of matrix multiplication in terms of vector operations. 
+单词:
+
+翻译:在向量操作这部分里经常考虑使用矩阵乘法。
+
+
+To illustrate using the three-dimensional case, we can think of a 3 × 3 matrix as a collection of three 3D vectors in two ways: either it is made up of three column vectors side-by-side, or it is made up of three row vectors stacked up
+
+单词:
+illustrate v 阐明 举例说明 图解
+made up 化妆成 编造成
+stack up 堆起来 加起来
+翻译:为了举例书说明单位坐标系情况,我们可以考虑一个 3x3的矩阵作为三个3d向量的集合的两种方式:一种是编造三个横向量边并着边,另一种编造三个竖向量堆叠起来。
+
+谓语:illustrate 
+
+
+
+For instance, the result of a matrix-vector multiplication y = Ax can be interpreted as a vector whose entries are the dot products of x with the rows of A. Naming these row vectors ri, we have
+
+单词:
+for instance 例如
+interpret 说明 解释 翻译
+翻译:例如,这矩阵向量乘法的结果y=ax 可以被解释作为一个向量，这个向量的条目x和a进行点乘，
+
+
+
+Alternatively, we can think of the same product as a sum of the three columns ci
+of A, weighted by the entries of x:
+
+单词:
+alternative adj 供选择的 选择性的 交替的 
+          n 二中选一  提供选择
+alternatively adv  要不 或者 非此即彼
+
+翻译:或者,我们会吧乘积考虑为相似是三个横向量相加
+
+谓语  think  
+
+
+
+
+原文:
+Using the same ideas, one can understand a matrix-matrix product AB as an array containing the pairwise dot products of all rows of A with all columns of B (cf. (5.2)); as a collection of products of the matrix A with all the column vectors of B, arranged left to right; as a collection of products of all the row vectors of A with the matrix B, stacked top to bottom; or as the sum of the pairwise outer products of all columns of A with all rows of B. (See Exercise 8.)
+
+
+Using the same ideas, one can understand a matrix-matrix product AB as an array containing the pairwise dot products of all rows of A with all columns of B (cf. (5.2)); 
+单词:
+pairwise adv 成对地 成双地
+         adj  成对发生的
+
+翻译:使用相似的方法,这个方法可以理解成 矩阵和矩阵的乘积AB当做一个数字容器成对的 所有A的行分别和B所有列进行点乘。
+
+
 ```
