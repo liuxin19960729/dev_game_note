@@ -210,4 +210,11 @@ vehicles.
 vehicle n 车辆 工具 交通工具 传播媒介 媒介物
 
 strategy n 战略 策略
+plunder v 掠夺 侵略 剽窃 
+        n 掠夺 战利品 掠夺品
+grave n 墓穴 死亡  沉音符 (废旧机器)堆积处
+      adj 重大的 严肃的 有深沉音符的
+
+spare adj 额外的 备用的 多余的
+
 ```
