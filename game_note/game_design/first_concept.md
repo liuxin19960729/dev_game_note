@@ -169,5 +169,45 @@ recreation n娱乐 消遣
 creation n 创在力
 creative adj 有创造性的
 
+seam v 缝合 接缝 裂缝
+     n 缝合处  结合处
+ore n 矿石
+seams of ore 矿石结合处
+deplete v 用尽 耗尽 使衰竭 使空虚
 
+you don’t deplete them and then they’re gone.
+你没有用尽他们,他们就消失了
+
+
+Ideas that are overused can become inactive for a while。
+for a while 暂时 一段时间
+overuse v 过度使用
+想法过度使用在一段时间里会变的不活跃。
+
+
+regenerate v 使重生 革新 在生
+generate v 形成 发生
+
+
+So When you are searching around for first concept。
+
+travel v 长途旅行 走步 移动
+
+inspiration n 灵感 鼓舞 吸气 妙计
+
+Start by looking for inspiration where others haven’t been for a while
+通过搜寻 被人暂时没有灵感的地开始
+
+
+mere adj 仅仅的 只不过
+      n  小湖 池塘
+plagiarism n 剽窃 剽窃物  
+ Bad game concepts are mere plagiarism: “I’m going to do Command & Conquer but with more light-armor
+vehicles.
+
+糟糕的游戏理念仅仅是剽窃物:""
+
+vehicle n 车辆 工具 交通工具 传播媒介 媒介物
+
+strategy n 战略 策略
 ```
