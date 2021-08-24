@@ -660,7 +660,7 @@ For instance, the result of a matrix-vector multiplication y = Ax can be interpr
 
 单词:
 for instance 例如
-interpret 说明 解释 翻译
+interpret v 说明 解释 翻译
 翻译:例如,这矩阵向量乘法的结果y=ax 可以被解释作为一个向量，这个向量的条目x和a进行点乘，
 
 
@@ -690,6 +690,91 @@ pairwise adv 成对地 成双地
          adj  成对发生的
 
 翻译:使用相似的方法,这个方法可以理解成 矩阵和矩阵的乘积AB当做一个数字容器成对的 所有A的行分别和B所有列进行点乘。
+
+
+These interpretations of matrix multiplication can often lead to valuable geometric interpretations of operations that may otherwise seem very abstract.
+
+单词:
+interpretation n 解释 说明
+interpret v 解释 说明
+valuable adj 有价值的 贵重的 可估价的
+翻译:矩阵乘法的说明经常会导致有有价值的操作那些非常抽象的几何学说明
+谓语:lead 
+```
+### Special Types of Mateices (特别的矩阵类型)
+```
+原文:
+The identity matrix is an example of a diagonal matrix, where all nonzero ele- ments occur along the diagonal. The diagonal consists of those elements whose column index equals the row index counting from the upper left.
+
+
+The identity matrix is an example of a diagonal matrix, where all nonzero ele- ments occur along the diagonal.
+
+单词:
+identity n 身份 同一性 一致 
+diagonal n 斜线 对角线
+         adj 斜的 对角线的 斜纹的
+occur v 出现 发生  存在         
+翻译:一致性矩阵是对角线矩阵的一个例子,所有非零元素都出线在对角线上。
+
+
+The diagonal consists of those elements whose column index equals the row index counting from the upper left.
+
+单词:
+consist v 由.....组成  由.....构成
+翻译:这斜线由这些从左上开始列索引个行索引相等的元素组成
+
+
+
+The identity matrix also has the property that it is the same as its transpose. Such matrices are called symmetric.
+
+单词:
+symmetric adj 对称的 匀称的 
+翻译:一致性矩阵也有转置不变的属性.因此这个矩阵叫做对称矩阵。
+
+
+
+原文:
+The identity matrix is also an orthogonal matrix, because each of its columns considered as a vector has length 1 and the columns are orthogonal to one another. The same is true of the rows (see Exercise 2). The determinant of any orthogonal matrix is either +1 or −1.
+
+
+
+The identity matrix is also an orthogonal matrix, because each of its columns considered as a vector has length 1 and the columns are orthogonal to one another.
+单词:
+orthogonal adj 直角的  正交的
+翻译:这一致性矩阵也是一个正交矩阵,因为每一列都包含一个向量长度为1 并且每一列都相互正交
+
+
+
+The same is true of the rows (see Exercise 2). The determinant of any orthogonal matrix is either +1 or −1.
+
+单词:
+翻译:行也是如此。任何一个对角线的行列式 +1 或 -1 里的一个
+
+
+A very useful property of orthogonal matrices is that they are nearly their own inverses. Multiplying an orthogonal matrix by its transpose results in the identity,
+
+单词:非常有用处的正交矩阵的属性是他们自己的反面。相乘的一个正交矩阵通过他们在统一性里的转换结果。
+
+
+原文:
+This is easy to see because the entries of RTR are dot products between the columns of R. Off-diagonal entries are dot products between orthogonal 
+vectors, and the diagonal entries are dot products of the (unit-length) columns with themselves.
+
+
+This is easy to see because the entries of RTR are dot products between the columns of R. 
+单词:
+翻译:这容易是为了看,因为 这些 RTR条目 时候 R的列之间的点乘
+
+
+
+The matrix is diagonal, and therefore symmetric, but not orthogonal (the columns are orthog-onal but they are not unit length).
+
+单词:
+翻译:斜线矩阵因此矩阵是对称的，但是没有正交（列是正交但是他们不是单位长度）
+```
+### Computing with Matrics and Determinants
+```
+Computing with  Matrics and Determinants 计算矩阵和行列式
 
 
 ```
