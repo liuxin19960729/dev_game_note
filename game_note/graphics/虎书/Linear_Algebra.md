@@ -777,4 +777,114 @@ The matrix is diagonal, and therefore symmetric, but not orthogonal (the columns
 Computing with  Matrics and Determinants 计算矩阵和行列式
 
 
+原文:
+Recall from Section 5.1 that the determinant takes n n-dimensional vectors and combines them to get a signed n-dimensional volume of the n-dimensional parallelepiped defined by the vectors. For example, the determinant in 2D is the area of the parallelogram formed by the vectors. We can use matrices to handle the mechanics of computing determinants.
+
+
+Recall from Section 5.1 that the determinant takes n n-dimensional vectors and combines them to get a signed n-dimensional volume of the n-dimensional parallelepiped defined by the vectors.
+
+单词:
+recall v 召回 回忆起 记起 取消
+       n 召回  回忆 侧小
+翻译: 回忆5.6节的n个空间向量并且合并这些向量为了去标记n-空间平行六边形的 n空间的通过向量来组成的行列式
+谓语 Recall 
+
+
+
+For example, the determinant in 2D is the area of the parallelogram formed by the vectors.
+
+单词:
+
+翻译:例如 ,在2D里面的行列式是平行四边形的范围通过向量组成。
+谓语: is 
+
+
+
+We can use matrices to handle the mechanics of computing determinants.
+
+单词:
+mechanics n 力学 结构 技术 机械学 
+翻译:我们会使用矩阵去处理计算行列式结构
+
+谓语 use 
+
+If we have 2D vectors r and s, we denote the determinant |rs|; this value is the signed area of the parallelogram formed by the vectors. Suppose we have two 2D vectors with Cartesian coordinates (a, b) and (A, B) (Figure 5.7). The determinant can be written in terms of column vectors or as a shorthand:
+
+
+If we have 2D vectors r and s, we denote the determinant |rs|;
+单词:
+denote v 表示 指示
+翻译: 如果我有2向量 r 和 s,我表示这个行列式是|rs|
+
+
+this value is the signed area of the parallelogram formed by the vectors.
+
+单词:
+
+翻译:值是有符号的平行四边形面积通过向量进行表示
+谓语 is (be动词)
+
+Suppose we have two 2D vectors with Cartesian coordinates (a, b) and (A, B) (Figure 5.7). 
+
+单词:
+suppose v 假设 认为  让 推想 猜想
+翻译:假设我有两个2D向量笛卡尔积坐标为(a, b) 和 (A, B)
+
+
+
+The determinant can be written in terms of column vectors or as a shorthand:
+
+
+单词:
+shorthand n 速记 速记法
+          adj 速记法的
+翻译:行列式能在 竖向量这部分作为速记法被写
+
+谓语 be 
+
+
+Note that the determinant of a matrix is the same as the determinant of its transpose :
+
+单词:
+翻译:注意 这行列式是和矩阵一样的装置阵的行列式。
+
+
+原文:
+This means that for any parallelogram in 2D there is a “sibling” parallelogram that has the same area but a different shape (Figure 5.8). For example, the parallelo- gram defined by vectors (3, 1) and (2, 4) has area 10, as does the parallelogram defined by vectors (3, 2) and (1, 4).
+
+
+This means that for any parallelogram in 2D there is a “sibling” parallelogram that has the same area but a different shape (Figure 5.8).
+
+单词:
+mean n 方法 手段 财产
+     v 用意 意味着 预示
+sibling n 兄弟姊妹  名族成员      
+翻译:对于在2D里面的任意平行四边形方法 是 a "成员"  永阳区域面积但是不同的形状的平行四边形
+
+
+谓语 is 
+
+
+
+For example, the parallelogram defined by vectors (3, 1) and (2, 4) has area 10, as does the parallelogram defined by vectors (3, 2) and (1, 4).
+
+单词:
+
+翻译:例如,平行四边形通过向量(3, 1) 和 (2, 4) 被定义 面积区域值 10 ,相似的平行四边形通过
+向量(3, 1) 和 (2, 4)被定义。
+
+
+原文:
+Example. The geometric meaning of the 3D determinant is helpful in seeing why certain formulas make sense. For example, the equation of the plane through the points (xi,yi,zi) for i = 0,1,2 is
+
+单词:
+geometric n 几何学
+helpful adj 有益的 帮助的
+certain adj 某一 必然 确信
+        pron 某些 某几个
+sense n 感觉 官能 观念 道理
+      v 感觉到 检测        
+翻译:例.在确信式子的观念原因观察的的原因是在几何学中3D行列式非常有用.
+例如  平面等式穿过 i为012 的点(xi,yi,zi)是
+
 ```
