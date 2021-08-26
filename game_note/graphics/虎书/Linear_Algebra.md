@@ -887,4 +887,88 @@ sense n 感觉 官能 观念 道理
 翻译:例.在确信式子的观念原因观察的的原因是在几何学中3D行列式非常有用.
 例如  平面等式穿过 i为012 的点(xi,yi,zi)是
 
+原文:
+Each column is a vector from point (xi, yi, zi) to point (x, y, z). The volume of the parallelepiped with those vectors as sides is zero only if (x, y, z) is coplanar with the three other points. Almost all equations involving determinants have similarly simple underlying geometry.
+
+
+Each column is a vector from point (xi, yi, zi) to point (x, y, z).
+翻译:每一列是 一个向量从点(xi, yi, zi)到(x, y, z)。
+
+
+The volume of the parallelepiped with those vectors as sides is zero only if (x, y, z) is coplanar with the three other points. 
+
+单词:
+
+翻译:若果 (x y z)和三个其他点共面，那么 平行六边体的体积是0。
+
+谓语:is
+
+
+
+Almost all equations involving determinants have similarly simple underlying geometry.
+
+翻译:几乎所有的等式 都包含行列式有相似简单的几何学
+
+
+原文:
+As we saw earlier, we can compute determinants by a brute force expansion where most terms are zero, and there is a great deal of bookkeeping on plus and minus signs. The standard way to manage the algebra of computing determinants is to use a form of Laplace’s expansion. The key part of computing the determinant this way is to find cofactors of various matrix elements. Each element of a square matrix has a cofactor which is the determinant of a matrix with one fewer row and column possibly multiplied by minus one. The smaller matrix is obtained by eliminating the row and column that the element in question is in. For example, for a 10 × 10 matrix, the cofactor of a82 is the determinant of the 9 × 9 matrix with the 8th row and 2nd column eliminated. The sign of a cofactor is positive if
+the sum of the row and column indices is even and negative otherwise. This can be remembered by a checkerboard pattern:
+
+
+As we saw earlier, we can compute determinants by a brute force expansion where most terms are zero, and there is a great deal of bookkeeping on plus and minus signs.
+
+单词:
+As we saw earlier 正如我早期看来
+翻译:正如我早期看来，我会通过暴力展开来计算大多数部分是0的行列式,有一个好的 对账簿上+-符号的约定
+
+
+
+
+The standard way to manage the algebra of computing determinants is to use a form of Laplace’s expansion
+
+
+单词:
+
+翻译:管理代数计算的标准的方式是使用拉普拉斯定理的像去展开
+
+
+
+The key part of computing the determinant this way is to find cofactors of various matrix elements. 
+
+单词:
+various adj 各方面的 各种各样的
+翻译:关键的计算行列式部分的方式去寻找个只能怪各样的矩阵元素辅因子。
+谓语: is
+
+
+Each element of a square matrix has a cofactor which is the determinant of a matrix with one fewer row and column possibly multiplied by minus one. 
+
+单词:
+翻译:每一个方阵的元素有一个矩阵行列式的行和列通过减1的辅因子
+谓语:
+
+
+The smaller matrix is obtained by eliminating the row and column that the element in question is in.
+
+单词:
+eliminate v 消除 排除 
+翻译:较小的矩阵是通过消除问题元素的行和列上来获得。
+
+
+For example, for a 10 × 10 matrix, the cofactor of a82 is the determinant of the 9 × 9 matrix with the 8th row and 2nd column eliminated.
+
+单词:
+翻译:例如,对于一个10x10的矩阵，余子式a82是去除第8行和第二2列的这 9 × 9 矩阵行列式。
+谓语  is 
+
+
+The sign of a cofactor is positive if
+the sum of the row and column indices is even and negative otherwise.
+
+单词:
+翻译: 如果行和列指数和是偶数余子式标记是+ 否则是-
+
+
+This can be remembered by a checkerboard pattern:
+翻译:可以通过棋盘格的格式来记住
 ```
