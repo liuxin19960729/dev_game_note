@@ -971,4 +971,126 @@ the sum of the row and column indices is even and negative otherwise.
 
 This can be remembered by a checkerboard pattern:
 翻译:可以通过棋盘格的格式来记住
+
+
+原文:
+The determinant of a matrix is found by taking the sum of products of the elements of any row or column with their cofactors. For example, the determinant of the 4 × 4 matrix above taken about its second column is
+
+
+The determinant of a matrix is found by taking the sum of products of the elements of any row or column with their cofactors.
+单词:
+found  v 创建 创立 创办 
+       v (find过去分词遭到)
+翻译:矩阵的行列式是通过计算任意行或列余子式和元素乘积的和得到
+
+
+
+For example, the determinant of the 4 × 4 matrix above taken about its second column is
+
+单词:
+above prep 超过 胜过 高于 在....上  在.....之上
+      adv 在上面 超过 上文 前文
+      adj 前文描述的 上述 以上
+      n 上述内容  上述人员
+翻译:例如,上面的4x4矩阵行列式拿它第二列计算.
+
+
+原文:
+We could do a similar expansion about any row or column and they would all
+yield the same result. Note the recursive nature of this expansion.
+
+
+We could do a similar expansion about any row or column and they would all
+yield the same result. 
+单词:
+
+翻译:我会一个相似的拆分关于任意行或列并且它们最总的结果一样
+
+谓语  do 
+
+
+
+Note the recursive nature of this expansion.
+单词:
+recur v 复发 递归 循环 重现
+recursive  adj 循环的 递归的
+recursion 递归循环 递归式
+翻译:注意 这递归拆分的性质。
+
+
+Example. A concrete example for the determinant of a particular 3×3 matrix by expanding the cofactors of the first row is
+
+单词:
+concreate adj  混凝土的 实在的 具体的 有形的
+          v 凝结 使凝固 
+          n 具体物 凝结物
+particular adj 特别的 详细的 独有的 挑剔的
+           n 详细说明  个别书名          
+翻译:一个具体的例子是为了拆分第一行余子式的一个详细的3x3矩阵行列通过是: 
+
+余子式符号 -^(i+j) i j是 Mij 去掉的行和列相的值
+
+
+原文:
+We can deduce that the volume of the parallelepiped formed by the vectors defined by the columns (or rows since the determinant of the transpose is the same) is zero. This is equivalent to saying that the columns (or rows) are not linearly independent. Note that the sum of the first and third rows is twice the second row, which implies linear dependence.
+
+
+We can deduce that the volume of the parallelepiped formed by the vectors defined by the columns (or rows since the determinant of the transpose is the same) is zero.(宾语从句)
+
+单词:
+deduce v 推论 推断
+翻译:我可以推段通过这些向量列(或行 通过移项行列式是一样的)定义 出平行六面体形状的大小is 0
+
+
+This is equivalent to saying that the columns (or rows) are not linearly independent.
+
+单词:
+equivalent adj 相等的 等价的 等效的 等量的
+           n 对等的(人或物)  当量
+independent adj 独立的  单独的 无党派的 不受约束的 
+            n 独立主义者  无党派者             
+翻译: 这是一个对等的目的是说列(或行)是和非线性无关的
+
+```
+
+
+### Computing Inverses 
+```
+原文:
+Determinants give us a tool to compute the inverse of a matrix. It is a very inef- ficient method for large matrices, but often in graphics our matrices are small. A key to developing this method is that the determinant of a matrix with two iden- tical rows is zero. This should be clear because the volume of the n-dimensional parallelepiped is zero if two of its sides are the same. Suppose we have a 4 × 4 A and we wish to find its inverse A−1. The inverse is
+
+
+Determinants give us a tool to compute the inverse of a matrix. 
+
+单词:
+give v 给 产生 让步 举办 授予 捐赠 面向   有弹性
+     n 弹性 弯曲 延展性 
+翻译:行列式式计算行列式你矩阵的一个工具。
+
+
+It is a very inefficient method for large matrices, but often in graphics our matrices are small.
+
+单词:
+inefficient adj 低效的 无效的 无能的
+翻译:这个计算你矩阵工具是对于非常大的矩阵一个非常低效的方法,但是通常在图像学里面五门矩阵是小矩阵。
+
+
+
+A key to developing this method is that the determinant of a matrix with two identical rows is zero.
+
+单词:
+identity n 身份 同一性 一致 特性  恒等式
+identical 同一的  完全相同的
+翻译:一个关键的正在发展中的方法是矩阵行列式有有两个完全相同的行是0。
+
+
+
+This should be clear because the volume of the n-dimensional parallelepiped is zero if two of its sides are the same. 
+
+单词:
+clear adj 清楚的 清澈的 晴朗的 无罪的
+      v 通过 清除 使干净 跳过 放晴 变清澈
+翻译:这应该非常清晰因为为空间里面平行留面体的体积是0如果他两条边相等
+
+
 ```
