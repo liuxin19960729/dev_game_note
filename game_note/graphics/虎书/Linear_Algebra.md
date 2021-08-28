@@ -1093,4 +1093,96 @@ clear adj 清楚的 清澈的 晴朗的 无罪的
 翻译:这应该非常清晰因为为空间里面平行留面体的体积是0如果他两条边相等
 
 
+
+Suppose we have a 4 × 4 A and we wish to find its inverse A−1. The inverse is
+
+单词:
+support v 支持
+suppose v 假设 猜想 料想 推想
+翻译:假设我有 一个4x4 矩阵 并且我西方去找到它的你矩阵A^-1 是
+
+
+
+
+原文:
+Note that this is just the transpose of the matrix where elements of A are replaced by their respective cofactors multiplied by the leading constant (1 or -1). This matrix is called the adjoint of A. The adjoint is the transpose of the cofactor matrix of A. We can see why this is an inverse. Look at the product AA−1 which we expect to be the identity. If we multiply the first row of A by the first column of the adjoint matrix we need to get |A| (remember the leading constant above divides by |A|:
+
+
+Note that this is just the transpose of the matrix where elements of A are replaced by their respective cofactors multiplied by the leading constant (1 or -1). This matrix is called the adjoint of A. 
+
+
+翻译:注意这个只是 A矩阵全部元素通过他们的各自的代数余子式通过前面 -1 ，1的常量进行相乘的逆矩阵. 这个矩阵叫做伴随举证.
+
+
+
+The adjoint is the transpose of the cofactor matrix of A. 
+翻译:
+伴随矩阵是A代数余子式矩阵的的转置矩阵
+
+主语 adjoint
+谓语 is (be动词)
+
+
+
+
+We can see why this is an inverse.(宾语从句)
+
+翻译：我们可以看到这个是转置的原因
+
+主语 We
+谓语 see 
+
+
+Look at the product AA−1 which we expect to be the identity.(定语从句)
+
+
+翻译:我们看到这个乘积  AA−1,我希望AA−1恒等式。
+主语  我们
+谓语 look
+
+
+
+If we multiply the first row of A by the first column of the adjoint matrix we need to get |A| (remember the leading constant above divides by |A|:
+
+翻译:若A第一行乘上伴随矩阵的第一列我需要取得|A|(记得这个前面的常数在上除以|A|)
+
+
+
+原文:
+This is true because the elements in the first row of A are multiplied exactly by their cofactors in the first column of the adjoint matrix which is exactly the determinant. The other values along the diagonal of the resulting matrix are |A| for analogous reasons. The zeros follow a similar logic:
+
+This is true because the elements in the first row of A are multiplied exactly by their cofactors in the first column of the adjoint matrix which is exactly the determinant.
+
+翻译:这个是正确的因为A的第一行元素乘以他们伴随矩阵第一行的实际是行列式的余子式，
+
+
+
+The other values along the diagonal of the resulting matrix are |A| for analogous reasons. The zeros follow a similar logic:
+
+翻译: 由于类似的原因其他值沿着 矩阵斜线线的结果是|A|。这些0也追随着相似的逻辑。
+谓语 are
+
+
+
+
+Note that this product is a determinant of some matrix:
+
+翻译:注意 这相乘是某个矩阵的行列式
+
+
+
+Because the first two rows are identical, the matrix is singular, and thus, its determinant is zero.
+
+翻译:因为前两行是相同的。矩阵是单独的,因此行列式是0。
+
+
+原文:
+The argument above does not apply just to four by four matrices; using that
+size just simplifies typography. For any matrix, the inverse is the adjoint matrix divided by the determinant of the matrix being inverted. The adjoint is the trans- pose of the cofactor matrix, which is just the matrix whose elements have been replaced by their cofactors.
+
+
+The argument above does not apply just to four by four matrices; using that
+size just simplifies typography. 
+
+翻译:这证明在上面不仅仅能够应用于4x4的矩阵;使用也能在大小上简化排版
 ```
