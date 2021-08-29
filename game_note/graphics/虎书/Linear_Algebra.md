@@ -1185,4 +1185,251 @@ The argument above does not apply just to four by four matrices; using that
 size just simplifies typography. 
 
 翻译:这证明在上面不仅仅能够应用于4x4的矩阵;使用也能在大小上简化排版
+
+
+
+For any matrix, the inverse is the adjoint matrix divided by the determinant of the matrix being inverted.
+翻译:对弈任何矩阵,逆矩阵是伴随矩阵除被逆的这个矩阵的行列式
+
+
+
+The adjoint is the transpose of the cofactor matrix, which is just the matrix whose elements have been replaced by their cofactors.
+
+翻译:伴随矩阵是余子式矩阵的转置矩阵,这个矩阵的元素被其他余子式矩阵所替换。
+
+```
+### Linear Systems
+```
+
+We often encounter linear systems in graphics with “n equations and n unknowns,” usually for n = 2 or n = 3. For example,
+
+翻译:在图形学里面我经常遇到线性系统有”n个等式 和 n个未知数“,通常地 n 为 2 或 3 例
+
+
+Here x, y, and z are the “unknowns” for which we wish to solve. We can write
+this in matrix form:
+
+
+这里的 x y 和 z 是 我们希望把他解出来的”未知数“。我们可以写上这样一个矩阵
+
+
+
+原文:
+A common shorthand for such systems is Ax = b where it is assumed that A is a square matrix with known constants, x is an unknown column vector (with ele- ments x, y, and z in our example), and b is a column matrix of known constants.
+
+
+翻译:这样的系统中通常的简写是 Ax=b ,这个式子假设知道的常数A是方阵,x是一个未知的列向量(在我们例子里面的 x y z ) ,b 是一个已知的常数列矩阵。
+
+
+
+原文:
+There are many ways to solve such systems, and the appropriate method de- pends on the properties and dimensions of the matrix A. Because in graphics we so frequently work with systems of size n ≤ 4, we’ll discuss here a method appropriate for these systems, known as Cramer’s rule, which we saw earlier, from a 2D geometric viewpoint, in the example on page 90. Here, we show this algebraically. The solution to the above equation is
+
+There are many ways to solve such systems, and the appropriate method de- pends on the properties and dimensions of the matrix A.
+翻译: 有多重方式去解决这个系统，适当的方法依赖属性和矩阵A的行列式。
+
+
+Because in graphics we so frequently work with systems of size n ≤ 4, we’ll discuss here a method appropriate for these systems, known as Cramer’s rule, which we saw earlier, from a 2D geometric viewpoint, in the example on page 90.
+
+翻译:因为在图形学 我们频繁方操作 n <=4大小的系统，=,我们将讨论这里的这个系统的适当的方法，知道克莱姆法则,我们之前看到过，从2D几何学观点,这个案例在 90叶上.
+
+
+
+
+Here, we show this algebraically. The solution to the above equation is
+
+翻译:这里们们展示代数学的方法。这解答了上面的等式
+
+
+原文:
+
+The rule here is to take a ratio of determinants, where the denominator is |A| and the numerator is the determinant of a matrix created by replacing a column of A with the column vector b. The column replaced corresponds to the position of the unknown in vector x. For example, y is the second unknown and the second column is replaced. Note that if |A| = 0, the division is undefined and there is no solution. This is just another version of the rule that if A is singular (zero determinant) then there is no unique solution to the equations.
+
+
+The rule here is to take a ratio of determinants, where the denominator is |A| and the numerator is the determinant of a matrix created by replacing a column of A with the column vector b. 
+
+翻译:这个规则是使用行列式比例,分母是|A| 并且分子是  矩阵通过用A的一列替换列向量b的行列式
+
+
+The column replaced corresponds to the position of the unknown in vector x.
+
+翻译:列替换未知向量x相应的未知。
+
+
+
+For example, y is the second unknown and the second column is replaced.
+翻译:例如,y是第二个未知数第二列被替换。
+
+
+
+Note that if |A| = 0, the division is undefined and there is no solution.
+
+翻译: 如果|A|=0,除法不能运算并且没有解答。
+
+
+This is just another version of the rule that if A is singular (zero determinant) then there is no unique solution to the equations.
+
+翻译:另一规则的A是单数（0 行列式）的 版本的时候这个等式不是唯一的解答
+
+```
+
+### Eigenvalues and Matrix Diagonalization 
+```
+Square matrices have eigenvalues and eigenvectors associated with them. The eigenvectors are those nonzero vectors whose directions do not change when mul- tiplied by the matrix. For example, suppose for a matrix A and vector a, we have Aa = λa.
+
+
+Square matrices have eigenvalues and eigenvectors associated with them.
+
+翻译: 方阵有特征值 和 特征值和他们的联系。
+
+
+
+The eigenvectors are those nonzero vectors whose directions do not change when multiplied by the matrix.
+
+翻译:特征向量是那些非零向量方向没有通过举证相乘发生改变的非0向量。
+
+
+
+For example, suppose for a matrix A and vector a, we have Aa = λa.
+
+翻译:例如,假设为一个矩阵A和向量 a ,我们有 have Aa = λa.
+
+
+
+原文:
+This means we have stretched or compressed a, but its direction has not changed. The scale factor λ is called the eigenvalue associated with eigenvector a. Knowing the eigenvalues and eigenvectors of matrices is helpful in a variety of practical applications. We will describe them to gain insight into geometric transformation matrices and as a step toward singular values and vectors described in the next section.
+
+
+
+This means we have stretched or compressed a, but its direction has not changed. 
+
+翻译:我们有拉伸和压缩 a 的 这些方法,但是他们方向没有发生改变。
+
+
+The scale factor λ is called the eigenvalue associated with eigenvector a.
+
+翻译:伸缩因数 λ 被叫做特征值 关联着特征向量a。
+
+
+
+Knowing the eigenvalues and eigenvectors of matrices is helpful in a variety of practical applications.
+
+翻译:知道了矩阵特征向量和特征值在各种的实际的应用中是非常有帮助的。
+
+
+
+
+原文
+If we assume a matrix has at least one eigenvector, then we can do a standard manipulation to find it. First, we write both sides as the product of a square matrix with the vector a: Aa = λIa,
+
+
+
+If we assume a matrix has at least one eigenvector, then we can do a standard manipulation to find it.
+
+翻译：如果我们假设矩阵有至少一个特征向量,我们可以做一个标准的操作去寻找它。
+
+
+First, we write both sides as the product of a square matrix with the vector a: Aa = λIa,
+
+首先,我们写所有的边作方阵和向量a的乘积: Aa = λIa,
+
+
+where I is an identity matrix. This can be rewritten Aa − λIa = 0.
+
+翻译: 那个的I 是一个统一的向量。 这个我们改写成 Aa − λIa = 0.
+
+
+Because matrix multiplication is distributive, we can group the matrices:(A−λI)a = 0.
+
+翻译:因为矩阵乘法是分散的,我们可以聚合这些矩阵:(A−λI)a = 0.
+
+
+
+原文:
+This equation can only be true if the matrix (A − λI) is singular, and thus its determinant is zero. The elements in this matrix are the numbers in A except along the diagonal. For example, for a 2 × 2 matrix the eigenvalues obey
+
+This equation can only be true if the matrix (A − λI) is singular, and thus its determinant is zero. 
+翻译:  只有矩阵(A − λI) 是单数 方程式才是正确的,因此它的行列式为0。
+
+
+The elements in this matrix are the numbers in A except along the diagonal.
+翻译:在A矩阵里面元素是数字除了对角线的数子。
+
+
+
+
+For example, for a 2 × 2 matrix the eigenvalues obey
+
+翻译:例如,对于一个 2x2矩阵 这特征值 服从 
+
+
+
+
+原文:
+Because this is a quadratic equation, we know there are exactly two solutions for λ. These solutions may or may not be unique or real. A similar manipulation for an n × n matrix will yield an nth-degree polynomial in λ. Because it is not possible, in general, to find exact explicit solutions of polynomial equations of degree greater than four, we can only compute eigenvalues of matrices 4 × 4 or smaller by analytic methods. For larger matrices, numerical methods are the only option.
+
+
+
+Because this is a quadratic equation, we know there are exactly two solutions for λ. 
+
+翻译:因为这个等式是二次等式,我们对于λ知道有两个解答。
+
+
+These solutions may or may not be unique or real
+翻译: 这些解答可能或可能不是唯一的或真实的
+
+
+A similar manipulation for an n × n matrix will yield an nth-degree polynomial in λ. 
+
+翻译:对于一个 nxn矩阵相似的操作将在λ产生出n次多项式 
+
+
+Because it is not possible, in general, to find exact explicit solutions of polynomial equations of degree greater than four, we can only compute eigenvalues of matrices 4 × 4 or smaller by analytic methods.
+
+翻译:因为它不可能，一般而言，去寻找精确明确的多项次方大于4的等式的解答 我们仅计算矩阵的特征值或,更小的分析方法。
+
+
+For larger matrices, numerical methods are the only option.
+翻译: 对于大矩阵,数字的方法是唯一的选项
+
+
+An important special case where eigenvalues and eigenvectors are particu- larly simple is symmetric matrices (where A = AT). The eigenvalues of real symmetric matrices are always real numbers, and if they are also distinct, their eigenvectors are mutually orthogonal. Such matrices can be put into diagonal form: A = QDQ^T,
+
+An important special case where eigenvalues and eigenvectors are particularly simple is symmetric matrices (where A = AT).
+翻译:方案重要特别的地方是特征值和特征向量是特别地简单的对称矩阵
+
+
+
+
+The eigenvalues of real symmetric matrices are always real numbers, and if they are also distinct, their eigenvectors are mutually orthogonal.
+
+翻译: 实对称矩阵全是实数，并且  如果他们是独特的，他们特征向量是相互地正交。
+
+
+
+
+Such matrices can be put into diagonal form: A = QDQ^T,
+
+翻译:因此矩阵可以进入对角化:A = QDQ^T.
+
+
+原文:
+where Q is an orthogonal matrix and D is a diagonal matrix. The columns of Q are the eigenvectors of A and the diagonal elements of D are the eigenvalues of A. Putting A in this form is also called the eigenvalue decomposition, because it decomposes A into a product of simpler matrices that reveal its eigenvectors and eigenvalues.
+
+where Q is an orthogonal matrix and D is a diagonal matrix.
+翻译:哪里的Q是一个正交矩阵并且D是一个斜线矩阵。
+
+
+The columns of Q are the eigenvectors of A and the diagonal elements of D are the eigenvalues of A.
+
+翻译:
+Q 矩阵列是A的特征向量,并且 D矩阵对角元素是A的特征值。
+
+
+
+Putting A in this form is also called the eigenvalue decomposition, because it decomposes A into a product of simpler matrices that reveal its eigenvectors and eigenvalues.
+
+翻译: 把A写成这种形式也被叫做是特征值分解,因为它分解A到更简单的显示它的特征向量和特征值的 矩阵乘法
+
+
 ```
