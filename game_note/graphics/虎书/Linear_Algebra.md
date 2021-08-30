@@ -1433,3 +1433,82 @@ Putting A in this form is also called the eigenvalue decomposition, because it d
 
 
 ```
+
+### Singular Value Decomposition 
+```
+原文:
+We saw in the last section that any symmetric matrix can be diagonalized, or de- composed into a convenient product of orthogonal and diagonal matrices. However, most matrices we encounter in graphics are not symmetric, and the eigen- value decomposition for nonsymmetric matrices is not nearly so convenient or illuminating, and in general involves complex-valued eigenvalues and eigenvec- tors even for real-valued inputs.
+
+We saw in the last section that any symmetric matrix can be diagonalized, or de- composed into a convenient product of orthogonal and diagonal matrices.
+
+翻译:我在上一小节看见了任何一个对称矩阵都能够对角化。或分解到一个方便正交和对角的乘法的矩阵
+
+
+
+However, most matrices we encounter in graphics are not symmetric, and the eigenvalue decomposition for nonsymmetric matrices is not nearly so convenient or illuminating, and in general involves complexvalued eigenvalues and eigenvectors even for real-valued inputs.
+
+
+翻译:在图形学里我们遇到大多数举证是不对称的,并且不对称矩阵分解特征值是几乎不方便和和没有启发性,一般包括中复数的特征值和特征向量即使是实数值的输入
+
+
+
+
+原文:
+here is another generalization of the symmetric eigenvalue decomposition to nonsymmetric (and even non-square) matrices; it is the singular value decom- position (SVD). The main difference between the eigenvalue decomposition of a symmetric matrix and the SVD of a nonsymmetric matrix is that the orthogonal matrices on the left and right sides are not required to be the same in the SVD:A = USVT.
+
+
+here is another generalization of the symmetric eigenvalue decomposition to nonsymmetric (and even non-square) matrices;
+
+翻译:这是另一个 对称特征值分解为非对称矩阵(甚至不是方的)的概括。
+
+
+The main difference between the eigenvalue decomposition of a symmetric matrix and the SVD of a nonsymmetric matrix is that the orthogonal matrices on the left and right sides are not required to be the same in the SVD:A = USVT.
+
+翻译:主要不同在对称矩阵特征值分解和 非对称矩阵SVD之间 正交矩阵左和右边不同。
+
+
+
+
+原文:
+Here U and V are two, potentially different, orthogonal matrices, whose columns are known as the left and right singular vectors of A, and S is a diagonal matrix whose entries are known as the singular values of A. When A is symmetric and has all nonnegative eigenvalues, the SVD and the eigenvalue decomposition are the same.
+
+Here U and V are two, potentially different, orthogonal matrices, whose columns are known as the left and right singular vectors of A, and S is a diagonal matrix whose entries are known as the singular values of A. 
+
+翻译:这里的U和V是2,可能不同,正交举证,它的列是被称为作为左和右奇异A向量,并且S是对角向量S词条被称为奇异值。
+
+When A is symmetric and has all nonnegative eigenvalues, the SVD and the eigenvalue decomposition are the same.
+
+翻译:当A是对称矩阵并且所有特征值是非负数的时候,SVD和特征值分解是相同的。
+
+
+
+
+原文:
+There is another relationship between singular values and eigenvalues that can be used to compute the SVD (though this is not the way an industrial-strength SVD implementation works). First we define M = AAT. We assume that we can perform a SVD on M:
+
+
+There is another relationship between singular values and eigenvalues that can be used to compute the SVD (though this is not the way an industrial-strength SVD implementation works). 
+
+翻译:有另一个 可以使用计算SVD的奇异值和特征值之间的联系
+
+
+First we define M = AAT. We assume that we can perform a SVD on M:
+
+翻译:首先我定义了M=AA^T .我猜测我会在M上执行SVD。
+
+
+
+
+翻译:
+The substitution is based on the fact that (BC)T = CTBT, that the transpose of an orthogonal matrix is its inverse, and the transpose of a diagonal matrix is the matrix itself. The beauty of this new form is that M is symmetric and US2UT is its eigenvalue decomposition, where S2 contains the (all nonnegative) eigenvalues. Thus, we find that the singular values of a matrix are the square roots of the eigenvalues of the product of the matrix with its transpose, and the left singular vectors are the eigenvectors of that product. A similar argument allows V, the matrix of right singular vectors, to be computed from ATA.
+
+The substitution is based on the fact that (BC)T = CTBT, that the transpose of an orthogonal matrix is its inverse, and the transpose of a diagonal matrix is the matrix itself. 
+
+翻译:置换是基于 (BC)T = CTBT事实,正交的转置矩阵是他们交换未知,并且对角的转置矩阵是他们自己。
+
+
+The beauty of this new form is that M is symmetric and US2UT is its eigenvalue decomposition, where S2 contains the (all nonnegative) eigenvalues.
+
+翻译:新形式的美妙之处在M是对称和 US2UT是他们特征值分解,S2包含(所有非负数)特征值。
+
+```
