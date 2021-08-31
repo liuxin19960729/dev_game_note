@@ -1511,4 +1511,45 @@ The beauty of this new form is that M is symmetric and US2UT is its eigenvalue d
 
 翻译:新形式的美妙之处在M是对称和 US2UT是他们特征值分解,S2包含(所有非负数)特征值。
 
+
+Thus, we find that the singular values of a matrix are the square roots of the eigenvalues of the product of the matrix with its transpose, and the left singular vectors are the eigenvectors of that product.
+
+翻译:因此,我发现奇异矩阵值和转置阵的乘积是特征值的平方，并且左奇异向量是乘积的特征值。
+
+
+
+A similar argument allows V, the matrix of right singular vectors, to be computed from ATA.
+
+
+翻译:相似自变量允许V,这右奇异向量矩阵,为ATA 这样计算
+
+We now make this concrete with an example:
+翻译:我们现在使用一个具体的例子
+
+
+
+We saw the eigenvalue decomposition for this matrix in the previous section. We observe immediately
+
+翻译:我们看这特征值分解这矩阵在上一小节。我立即观察
+
+We can solve for V algebraically
+翻译:我会从代数方式解达V
+
+
+
+This form used the standard symbol σi for the ith singular value. Again, for a symmetric matrix, the eigenvalues and the singular values are the same (σi = λi ). We will examine the geometry of SVD further in Section 6.1.6.
+
+This form used the standard symbol σi for the ith singular value.
+翻译:形式使用标准符号σi表示第i个奇异值。
+
+
+Again, for a symmetric matrix, the eigenvalues and the singular values are the same (σi = λi ). 
+翻译:在说,为了一个对称矩阵,特征值和奇异值时候相同的(σi = λi ).
+
+
+
+We will examine the geometry of SVD further in Section 6.1.6.
+翻译:我们将在6.1.6研究进一步SVD几何学。
+
+
 ```
