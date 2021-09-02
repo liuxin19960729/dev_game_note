@@ -131,4 +131,100 @@ Suppose we want to rotate a vector a by an angle φ counterclockwise to get vect
 
 If a makes an angle α with the x-axis, and its length is
 翻译:如果使用和x轴之间的角度是α,它的长是....
+
+原文:
+Because b is a rotation of a, it also has length r. Because it is rotated an angle φ from a, b makes an angle (α + φ) with the x-axis. Using the trigonometric addition identities (Section 2.3.3):
+
+
+Because b is a rotation of a, it also has length r.
+翻译:因为b是a的旋转,b的长也是r.
+
+Because it is rotated an angle φ from a, b makes an angle (α + φ) with the x-axis.
+翻译:因为b是从a旋转φ度得到,b的角度相对于x轴是(α + φ)。
+
+
+Substituting xa =rcosαand ya =rsinαgives
+翻译:替代xa =rcosα 和 ya =rsinα 
+
+In matrix form, the transformation that takes a to b is then
+
+翻译:矩阵的形式里面,这a到b的转换是
+
+
+原文:
+Because the norm of each row of a rotation matrix is one (sin2 φ+cos2 φ = 1), and the rows are orthogonal (cos φ(− sin φ) + sin φ cos φ = 0), we see that rotation matrices are orthogonal matrices (Section 5.2.4). By looking at the matrix we can read off two pairs of orthonormal vectors: the two columns, which are the vectors to which the transformation sends the canonical basis vectors (1, 0) and (0, 1); and the rows, which are the vectors that the transformations sends to the canonical basis vectors.
+
+
+Because the norm of each row of a rotation matrix is one (sin2 φ+cos2 φ = 1), and the rows are orthogonal (cos φ(− sin φ) + sin φ cos φ = 0), we see that ro- tation matrices are orthogonal matrices (Section 5.2.4).
+翻译:因为每一个标准旋转矩阵行是 1(sin2 φ+cos2 φ = 1,并且这些行是正交的,我看见这个
+旋转矩阵是正交矩阵。
+
+
+By looking at the matrix we can read off two pairs of orthonormal vectors: the two columns, which are the vectors to which the transformation sends the canonical basis vectors (1, 0) and (0, 1);
+
+翻译:通过看向这个矩阵我们读了上两部分的正交向量:两列,是转换发送者标准基础向量(1, 0) 和(0, 1)的向量。
+
+
+and the rows, which are the vectors that the transformations sends to the canonical basis vectors.
+
+翻译:并且这些行，是转换发送标准机向量的向量。
+
+```
+
+### Reflection(映射)
+```
+We can reflect a vector across either of the coordinate axes by using a scale with one negative scale factor (see Figures 6.8 and 6.9):
+
+翻译:我们可以通过使用缩放-1的缩放因子映射一个向量穿过另一个坐标轴。
+
+
+
+While one might expect that the matrix with −1 in both elements of the diagonal is also a reflection, in fact it is just a rotation by π radians.
+
+翻译:可能认为矩阵在两个对角元素为-1 是一个反射,是实上他是旋转了π角度。
+```
+
+### Composition and Decomposition of Transformations 
+```
+Composition and Decomposition of Transformations
+转换合并和分解
+
+
+原文:
+It is common for graphics programs to apply more than one transformation to an object. For example, we might want to first apply a scale S, and then a rotation R. This would be done in two steps on a 2D vector v1:
+
+
+It is common for graphics programs to apply more than one transformation to an object.
+翻译:一个转换对象是图形学项目更多的通用的应用。
+
+
+For example, we might want to first apply a scale S, and then a rotation R. This would be done in two steps on a 2D vector v1:
+
+翻译:例如,我可能像首先应用缩放s,并且a旋转。在2D向量上通过两部完成。
+
+Because matrix multiplication is associative, we can also write
+
+翻译:因为矩阵乘法是一个两个的，我们也可以写成
+
+
+In other words, we can represent the effects of transforming a vector by two matrices in sequence using a single matrix of the same size, which we can compute by multiplying the two matrices: M = RS (Figure 6.10).
+
+翻译:换句话说,在依次使用单个同大小矩阵的时候我们通过两个矩阵表达转换向量的影响,通过两个
+矩阵相乘: M = RS计算。
+
+
+It is very important to remember that these transforms are applied from the right side first. So the matrix M = RS first applies S and then R.
+
+翻译:这些变形从右边第一个开始被运用是非常重要的要记住。因此矩阵M = RS  首先被应用的是
+S在是R。
+
+
+
+Example. Suppose we want to scale by one-half in the vertical direction and then rotate by π/4 radians (45 degrees). The resulting matrix is
+
+翻译:例。假设我们想在垂直方向缩放1/2 并且旋转π/4 弧度。这结果举证是
+
+
+It is important to always remember that matrix multiplication is not commutative. So the order of transforms does matter. In this example, rotating first, and then scaling, results in a different matrix (see Figure 6.11):
+
 ```
