@@ -224,7 +224,81 @@ Example. Suppose we want to scale by one-half in the vertical direction and then
 
 翻译:例。假设我们想在垂直方向缩放1/2 并且旋转π/4 弧度。这结果举证是
 
-
+原文:
 It is important to always remember that matrix multiplication is not commutative. So the order of transforms does matter. In this example, rotating first, and then scaling, results in a different matrix (see Figure 6.11):
+
+It is important to always remember that matrix multiplication is not commutative. 
+翻译:矩阵乘法不能交换位置非常重要应该把他记住。
+
+
+So the order of transforms does matter.
+
+翻译:所以转换的顺序非常重要。
+
+
+In this example, rotating first, and then scaling, results in a different matrix (see Figure 6.11):
+
+翻译:在这个例子里,首先是旋转其次是缩放,获得了不同的矩阵结果
+
+
+原文:
+Example. Using the scale matrices we have presented, nonuniform scaling can only be done along the coordinate axes. If we wanted to stretch our clock by 50% along one of its diagonals, so that 8:00 through 1:00 move to the northwest and 2:00 through 7:00 move to the southeast, we can use rotation matrices in combination with an axis-aligned scaling matrix to get the result we want. The idea is to use a rotation to align the scaling axis with a coordinate axis, then scale along that axis, then rotate back. In our example, the scaling axis is the “backslash” diagonal of the square, and we can make it parallel to the x-axis with
+
+
+Example. Using the scale matrices we have presented, nonuniform scaling can only be done along the coordinate axes. 
+
+翻译:例。使用我们给的缩放矩阵,不统一缩放仅沿着坐标系轴进行。
+
+
+
+
+If we wanted to stretch our clock by 50% along one of its diagonals, so that 8:00 through 1:00 move to the northwest and 2:00 through 7:00 move to the southeast, we can use rotation matrices in combination with an axis-aligned scaling matrix to get the result we want. 
+
+翻译:如果我想通过沿着斜边50%去拉伸我的时钟,以至于8：00 到 1：00西北方向 移动到2：00到7：00的东南方向,我们 组合 使用旋转矩阵和轴对齐的缩放矩阵去获得我们想要的结果
+
+
+The idea is to use a rotation to align the scaling axis with a coordinate axis, then scale along that axis, then rotate back.
+
+翻译:这想法是为了使用旋转和坐标轴对齐,沿着那个轴缩放,在旋转回去
+
+
+
+In our example, the scaling axis is the “backslash” diagonal of the square, and we can make it parallel to the x-axis with
+
+翻译:在我们的例子里,缩放轴是方阵里的”反斜杠“斜线,并且我们使缩放坐标轴平行于x轴
+
+
+In mathematical notation, this can be written RSRT. The result of multiply- ing the three matrices together is
+
+翻译:在数学表示里,可以被写成RSRT.三个矩阵一起乘法的结果是
+
+
+原文:
+Building up a transformation from rotation and scaling transformations 
+actually works for any linear transformation, and this fact leads to a powerful way of thinking about these transformations, as explored in the next section.
+
+翻译:构建一个转换旋转和实际操作于对于任意线性缩放的转换，并且这个事实通过思考这些转换强大的方式,在下一章我们会探索。
+```
+
+### Decomposition of Transformations 
+```
+
+Sometimes it’s necessary to “undo” a composition of transformations, taking a transformation apart into simpler pieces. For instance, it’s often useful to present a transformation to the user for manipulation in terms of separate rotations and scale factors, but a transformation might be represented internally simply as a matrix, with the rotations and scales already mixed together. This kind of manipulation can be achieved if the matrix can be computationally disassembled into the desired pieces, the pieces adjusted, and the matrix reassembled by multiplying the pieces together again.
+
+Sometimes it’s necessary to “undo” a composition of transformations, taking a transformation apart into simpler pieces.
+
+翻译:有些时候转换分解是必须的为了去”取消“转换的组合
+
+
+For instance, it’s often useful to present a transformation to the user for manipulation in terms of separate rotations and scale factors, but a transformation might be represented internally simply as a matrix, with the rotations and scales already mixed together.
+
+翻译:例如,分解转换常常非常有用为使用者操作分开旋转和缩放的因子,但是转换可能作为一个内部地简单的旋转和缩放已经混合在一起的矩阵被展示.
+
+
+
+This kind of manipulation can be achieved if the matrix can be computationally disassembled into the desired pieces, the pieces adjusted, and the matrix reassembled by multiplying the pieces together again.
+
+翻译:这种操作若果能够计算拆解成自己所需要的部分被实现,这部分调节并且通过在一个死这部分相乘进行矩阵的重新组装。
+
 
 ```
