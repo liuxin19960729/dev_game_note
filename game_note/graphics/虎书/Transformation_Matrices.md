@@ -301,4 +301,59 @@ This kind of manipulation can be achieved if the matrix can be computationally d
 翻译:这种操作若果能够计算拆解成自己所需要的部分被实现,这部分调节并且通过在一个死这部分相乘进行矩阵的重新组装。
 
 
+
+
+原文:
+It turns out that this decomposition, or factorization, is possible, regardless of the entries in the matrix—and this fact provides a fruitful way of thinking about transformations and what they do to geometry that is transformed by them.
+
+
+原文:分解出或因数分解出,可能在矩阵和里的无关条目这实际上是提供一种高效的关于转换和几何学通过他们转换的思考方式。
+
+
+
+  
+Symmetric Eigenvalue Decomposition 
+对称特征值分解。
+
+
+Let’s start with symmetric matrices. Recall from Section 5.4 that a symmetric matrix can always be taken apart using the eigenvalue decomposition into a product of the form A = RSRT。
+
+
+翻译:让我们从对称矩阵开始。回忆起5.4节对称矩阵总是拿部分使用特征值分解从A = RSRT 的乘积。
+
+
+
+
+
+where R is an orthogonal matrix and S is a diagonal matrix; we will call the columns of R (the eigenvectors) by the names v1 and v2, and we’ll call the diagonal entries of S (the eigenvalues) by the names λ1 and λ2.
+
+翻译:R 是正交矩阵并且S是斜角矩阵;我们将通过名字 v1 ,v2 知道R(特征向量)的列 并且我们将
+通过λ1和λ2知道斜的S(特征值)条目。
+
+
+In geometric terms we can now recognize R as a rotation and S as a scale, so this is just a multi-step geometric transformation (Figure 6.13):
+
+翻译:在几何项里,我们现在立即识别出R 作为一个旋转和并且作为一个缩放的矩阵,因此几何项是一个多步骤几何转换。
+
+
+
+Looking at the effect of these three transforms together, we can see that they have the effect of a nonuniform scale along a pair of axes. As with an axis-aligned scale, the axes are perpendicular, but they aren’t the coordinate axes; 
+
+翻译:看向这些三个转换一起的效果,我们看到他们随着一对轴线缩放不均匀的影响。如果轴线对齐缩放时
+轴线是对齐的,但是他们坐标轴不相同。
+
+
+instead they are the eigenvectors of A. This tells us something about what it means to be a symmetric matrix: symmetric matrices are just scaling operations albeit potentially nonuniform and non–axis-aligned ones.
+
+翻译:相反 他们的是A的特征向量.这告诉我们关于对称矩阵是什么的事情:对称矩阵是仅缩放操作，虽然可能不统一和项线为对齐 缩放。
+
+
+
+
+
+
+The matrix above, then, according to its eigenvalue decomposition, scales in a direction 31.7◦ counterclockwise from three o’clock (the x-axis). This is a touch before 2 p.m. on the clockface as is confirmed by Figure 6.14.
+
+翻译: 矩阵上面,它们的特征值分解,从3点开始逆时针方向旋转31.7度方向上缩放,通过图6.14知道他是在下午2点之前在钟面上触摸的。
+
 ```
